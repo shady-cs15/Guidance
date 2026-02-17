@@ -33,4 +33,8 @@ CUDA_VISIBLE_DEVICES=0 python -m openrlhf.cli.train_ppo_ray \
   --save_steps 50 \
   --logging_steps 1 \
   --eval_steps -1 \
-  --apply_chat_template
+  --apply_chat_template \
+  --use_wandb enabled \
+  --wandb_org "${WANDB_ENTITY}" \
+  --wandb_project guidance \
+  --wandb_run_name smoke_$(date +%m%dT%H%M)
