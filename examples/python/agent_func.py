@@ -8,7 +8,7 @@ from openrlhf.utils.agent import AgentInstanceBase, MultiTurnAgentExecutor
 
 # A simple n-step random environment
 class AgentInstance(AgentInstanceBase):
-    async def __init__(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs):
         self.step_idx = 0
         self.max_steps = random.randint(1, 3)  # 1-3 steps
 
@@ -46,7 +46,7 @@ class AgentInstance(AgentInstanceBase):
 
         # Check if episode is done
         done = self.step_idx >= self.max_steps
-        reward = torch.randint(0, 2, (1,)).float() if done else torch.tensor(0)
+        reward = torch.randint(0, 2, (1,), dtype=torch.int64).float() if done else torch.tensor(0.0, dtype=torch.float32)
 
         # Generate environment feedback based on whether episode is done
         environment_feedback = (
