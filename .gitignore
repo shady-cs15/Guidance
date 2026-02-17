@@ -80,6 +80,10 @@ wandb/
 
 # data
 data/
+!data/minif2f_theorem_map.json
+!data/minif2f_valid.jsonl
+!data/minif2f_test.jsonl
+!data/minif2f_few_shot.jsonl
 
 # experiments
 exp/
