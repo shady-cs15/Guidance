@@ -78,6 +78,9 @@ target/
 # wandb
 wandb/
 
+# data
+data/
+
 # experiments
 exp/
 
