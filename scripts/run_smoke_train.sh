@@ -1,0 +1,36 @@
+# Runs a smoke train job for single gpu
+CUDA_VISIBLE_DEVICES=0 python -m openrlhf.cli.train_ppo_ray \
+  --pretrain Qwen/Qwen2.5-0.5B-Instruct \
+  --advantage_estimator reinforce_baseline \
+  --agent_func_path /root/Guidance/examples/python/agent_func.py \
+  --prompt_data OpenRLHF/dapo-math-17k \
+  --input_key prompt \
+  --label_key label \
+  --actor_num_nodes 1 \
+  --actor_num_gpus_per_node 1 \
+  --ref_num_nodes 1 \
+  --ref_num_gpus_per_node 1 \
+  --colocate_actor_ref \
+  --colocate_all_models \
+  --vllm_num_engines 1 \
+  --vllm_tensor_parallel_size 1 \
+  --vllm_sync_backend nccl \
+  --vllm_gpu_memory_utilization 0.35 \
+  --prompt_max_len 256 \
+  --generate_max_len 128 \
+  --rollout_batch_size 8 \
+  --micro_rollout_batch_size 1 \
+  --train_batch_size 4 \
+  --micro_train_batch_size 1 \
+  --n_samples_per_prompt 2 \
+  --max_samples 64 \
+  --num_episodes 1 \
+  --max_epochs 1 \
+  --zero_stage 2 \
+  --param_dtype bf16 \
+  --save_path ./exp/smoke \
+  --ckpt_path ./exp/smoke/ckpt \
+  --save_steps 50 \
+  --logging_steps 1 \
+  --eval_steps -1 \
+  --apply_chat_template
