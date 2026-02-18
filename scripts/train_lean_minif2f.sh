@@ -159,9 +159,13 @@ ray job submit --address="http://127.0.0.1:8265" \
             "__pycache__",
             "*.pyc",
             ".venv"
-        ]
+        ],
+        "env_vars": {
+            "PATH": "/root/Guidance/.venv/bin:/root/.elan/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "VIRTUAL_ENV": "/root/Guidance/.venv"
+        }
     }' \
-    -- python3 -m openrlhf.cli.train_ppo_ray \
+    -- /root/Guidance/.venv/bin/python3 -m openrlhf.cli.train_ppo_ray \
     "${CKPT_ARGS[@]}" \
     "${ROLLOUT_ARGS[@]}" \
     "${ENGINE_ARGS[@]}" \
