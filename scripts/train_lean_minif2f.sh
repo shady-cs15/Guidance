@@ -149,7 +149,18 @@ echo "  GPUs:      8× H200"
 echo "  Agent:     ${AGENT_FUNC_PATH}"
 echo "================================================================"
 
+# Combine all arguments and submit the Ray job
 ray job submit --address="http://127.0.0.1:8265" \
+    --runtime-env-json='{
+        "working_dir": "/root/Guidance",
+        "excludes": [
+            ".git",
+            "third_party",
+            "__pycache__",
+            "*.pyc",
+            ".venv"
+        ]
+    }' \
     -- python3 -m openrlhf.cli.train_ppo_ray \
     "${CKPT_ARGS[@]}" \
     "${ROLLOUT_ARGS[@]}" \
