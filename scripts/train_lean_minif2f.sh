@@ -20,7 +20,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 WORK_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 # ---- Model ----
-MODEL_PATH="${MODEL_PATH:-Qwen/Qwen2.5-7B-Instruct}"
+MODEL_PATH="${MODEL_PATH:-/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775}"
 
 # ---- Data (local JSONL) ----
 TRAIN_DATA="${WORK_DIR}/data/minif2f_valid.jsonl"
@@ -30,6 +30,9 @@ AGENT_FUNC_PATH="${WORK_DIR}/examples/python/agent_func_lean_minif2f.py"
 
 # ---- Output ----
 SAVE_PATH="${WORK_DIR}/exp/lean_minif2f_$(date +%Y%m%d)"
+
+# ---- HuggingFace ----
+export HF_TOKEN="${HF_TOKEN:-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}"
 
 # ---- Lean REPL tuning (exported so the agent process picks them up) ----
 export LEAN_REPL_TIMEOUT="${LEAN_REPL_TIMEOUT:-300}"   # seconds per REPL response
@@ -91,26 +94,27 @@ ROLLOUT_ARGS=(
 )
 
 ENGINE_ARGS=(
-    # Async training: lets GPU train while next batch of Lean REPLs run.
-    --async_train
+    # NOTE: --async_train disabled for 0.5B sanity check (avoids NCCL weight-sync).
+    # Re-enable for larger models: --async_train
 
-    # --- GPU allocation (8× H200) ---
-    #   Actor + Ref colocated on 4 GPUs; vLLM on 2 engines × 2 TP
+    # --- GPU allocation ---
+    # For 0.5B: 1 GPU actor + ref colocated, 1 vLLM engine TP=1
+    # For 7B+:  bump actor_num_gpus_per_node=4, vllm_num_engines=2, vllm_tensor_parallel_size=2
     --actor_num_nodes 1
-    --actor_num_gpus_per_node 4
+    --actor_num_gpus_per_node 1
     --ref_num_nodes 1
-    --ref_num_gpus_per_node 4
+    --ref_num_gpus_per_node 1
     --colocate_all_models
     --deepspeed_enable_sleep
 
-    --vllm_num_engines 2
-    --vllm_tensor_parallel_size 2
+    --vllm_num_engines 1
+    --vllm_tensor_parallel_size 1
     --vllm_gpu_memory_utilization 0.7
     --vllm_sync_backend nccl
     --enforce_eager
 
     # --- DeepSpeed ---
-    --zero_stage 3
+    --zero_stage 2
     --gradient_checkpointing
     --param_dtype bf16
 )
@@ -159,11 +163,7 @@ ray job submit --address="http://127.0.0.1:8265" \
             "__pycache__",
             "*.pyc",
             ".venv"
-        ],
-        "env_vars": {
-            "PATH": "/root/Guidance/.venv/bin:/root/.elan/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-            "VIRTUAL_ENV": "/root/Guidance/.venv"
-        }
+        ]
     }' \
     -- /root/Guidance/.venv/bin/python3 -m openrlhf.cli.train_ppo_ray \
     "${CKPT_ARGS[@]}" \

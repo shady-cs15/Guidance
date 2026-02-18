@@ -1,4 +1,5 @@
 import argparse
+import os
 from datetime import datetime
 
 import ray
@@ -18,7 +19,17 @@ from openrlhf.utils import get_strategy
 def train(args):
     # initialize ray if not initialized
     if not ray.is_initialized():
-        ray.init(runtime_env={"env_vars": {"TOKENIZERS_PARALLELISM": "true", "NCCL_DEBUG": "WARN"}})
+        ray.init(runtime_env={"env_vars": {
+            "TOKENIZERS_PARALLELISM": "true",
+            "NCCL_DEBUG": "WARN",
+            "HF_TOKEN": os.environ.get("HF_TOKEN", ""),
+            "HF_HUB_OFFLINE": os.environ.get("HF_HUB_OFFLINE", "1"),
+            "HF_HOME": os.environ.get("HF_HOME", os.path.expanduser("~/.cache/huggingface")),
+            "PYTHONPATH": "/root/Guidance/.venv/lib/python3.12/site-packages:"
+                          + os.environ.get("PYTHONPATH", ""),
+            "PATH": "/root/Guidance/.venv/bin:/root/.elan/bin:"
+                    + os.environ.get("PATH", ""),
+        }})
 
     # configure strategy
     strategy = get_strategy(args)
