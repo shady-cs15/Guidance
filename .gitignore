@@ -78,8 +78,8 @@ target/
 # wandb
 wandb/
 
-# data
-data/
+# data – ignore everything inside data/ except specific checked-in files
+data/*
 !data/minif2f_theorem_map.json
 !data/minif2f_valid.jsonl
 !data/minif2f_test.jsonl

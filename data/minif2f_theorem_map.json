@@ -1,0 +1,2930 @@
+{
+  "MiniF2F.Test.aime_1983_p1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1983_p1.lean",
+    "full_name": "MiniF2F.Test.aime_1983_p1"
+  },
+  "MiniF2F.Test.aime_1983_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1983_p2.lean",
+    "full_name": "MiniF2F.Test.aime_1983_p2"
+  },
+  "MiniF2F.Test.aime_1983_p3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1983_p3.lean",
+    "full_name": "MiniF2F.Test.aime_1983_p3"
+  },
+  "MiniF2F.Test.aime_1984_p1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1984_p1.lean",
+    "full_name": "MiniF2F.Test.aime_1984_p1"
+  },
+  "MiniF2F.Test.aime_1984_p7": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1984_p7.lean",
+    "full_name": "MiniF2F.Test.aime_1984_p7"
+  },
+  "MiniF2F.Test.aime_1987_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1987_p5.lean",
+    "full_name": "MiniF2F.Test.aime_1987_p5"
+  },
+  "MiniF2F.Test.aime_1988_p8": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1988_p8.lean",
+    "full_name": "MiniF2F.Test.aime_1988_p8"
+  },
+  "MiniF2F.Test.aime_1989_p8": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1989_p8.lean",
+    "full_name": "MiniF2F.Test.aime_1989_p8"
+  },
+  "MiniF2F.Test.aime_1990_p15": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1990_p15.lean",
+    "full_name": "MiniF2F.Test.aime_1990_p15"
+  },
+  "MiniF2F.Test.aime_1990_p4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1990_p4.lean",
+    "full_name": "MiniF2F.Test.aime_1990_p4"
+  },
+  "MiniF2F.Test.aime_1991_p9": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1991_p9.lean",
+    "full_name": "MiniF2F.Test.aime_1991_p9"
+  },
+  "MiniF2F.Test.aime_1994_p3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1994_p3.lean",
+    "full_name": "MiniF2F.Test.aime_1994_p3"
+  },
+  "MiniF2F.Test.aime_1995_p7": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1995_p7.lean",
+    "full_name": "MiniF2F.Test.aime_1995_p7"
+  },
+  "MiniF2F.Test.aime_1997_p9": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1997_p9.lean",
+    "full_name": "MiniF2F.Test.aime_1997_p9"
+  },
+  "MiniF2F.Test.aime_1999_p11": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/aime_1999_p11.lean",
+    "full_name": "MiniF2F.Test.aime_1999_p11"
+  },
+  "MiniF2F.Test.algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7.lean",
+    "full_name": "MiniF2F.Test.algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7"
+  },
+  "MiniF2F.Test.algebra_9onxpypzleqsum2onxpy": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_9onxpypzleqsum2onxpy.lean",
+    "full_name": "MiniF2F.Test.algebra_9onxpypzleqsum2onxpy"
+  },
+  "MiniF2F.Test.algebra_abpbcpcageq3_sumaonsqrtapbgeq3onsqrt2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_abpbcpcageq3_sumaonsqrtapbgeq3onsqrt2.lean",
+    "full_name": "MiniF2F.Test.algebra_abpbcpcageq3_sumaonsqrtapbgeq3onsqrt2"
+  },
+  "MiniF2F.Test.algebra_absapbon1pabsapbleqsumabsaon1pabsa": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_absapbon1pabsapbleqsumabsaon1pabsa.lean",
+    "full_name": "MiniF2F.Test.algebra_absapbon1pabsapbleqsumabsaon1pabsa"
+  },
+  "MiniF2F.Test.algebra_absxm1pabsxpabsxp1eqxp2_0leqxleq1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_absxm1pabsxpabsxp1eqxp2_0leqxleq1.lean",
+    "full_name": "MiniF2F.Test.algebra_absxm1pabsxpabsxp1eqxp2_0leqxleq1"
+  },
+  "MiniF2F.Test.algebra_amgm_sum1toneqn_prod1tonleq1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_amgm_sum1toneqn_prod1tonleq1.lean",
+    "full_name": "MiniF2F.Test.algebra_amgm_sum1toneqn_prod1tonleq1"
+  },
+  "MiniF2F.Test.algebra_amgm_sumasqdivbgeqsuma": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_amgm_sumasqdivbgeqsuma.lean",
+    "full_name": "MiniF2F.Test.algebra_amgm_sumasqdivbgeqsuma"
+  },
+  "MiniF2F.Test.algebra_apbmpcneq0_aeq0anbeq0anceq0": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_apbmpcneq0_aeq0anbeq0anceq0.lean",
+    "full_name": "MiniF2F.Test.algebra_apbmpcneq0_aeq0anbeq0anceq0"
+  },
+  "MiniF2F.Test.algebra_apbon2pownleqapownpbpowon2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_apbon2pownleqapownpbpowon2.lean",
+    "full_name": "MiniF2F.Test.algebra_apbon2pownleqapownpbpowon2"
+  },
+  "MiniF2F.Test.algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3.lean",
+    "full_name": "MiniF2F.Test.algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3"
+  },
+  "MiniF2F.Test.algebra_bleqa_apbon2msqrtableqambsqon8b": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_bleqa_apbon2msqrtableqambsqon8b.lean",
+    "full_name": "MiniF2F.Test.algebra_bleqa_apbon2msqrtableqambsqon8b"
+  },
+  "MiniF2F.Test.algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778.lean",
+    "full_name": "MiniF2F.Test.algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778"
+  },
+  "MiniF2F.Test.algebra_ineq_nto1onlt2m1on": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_ineq_nto1onlt2m1on.lean",
+    "full_name": "MiniF2F.Test.algebra_ineq_nto1onlt2m1on"
+  },
+  "MiniF2F.Test.algebra_others_exirrpowirrrat": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_others_exirrpowirrrat.lean",
+    "full_name": "MiniF2F.Test.algebra_others_exirrpowirrrat"
+  },
+  "MiniF2F.Test.algebra_sqineq_at2malt1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_sqineq_at2malt1.lean",
+    "full_name": "MiniF2F.Test.algebra_sqineq_at2malt1"
+  },
+  "MiniF2F.Test.algebra_sqineq_unitcircatbpabsamblt1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_sqineq_unitcircatbpabsamblt1.lean",
+    "full_name": "MiniF2F.Test.algebra_sqineq_unitcircatbpabsamblt1"
+  },
+  "MiniF2F.Test.algebra_sqineq_unitcircatbpamblt1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_sqineq_unitcircatbpamblt1.lean",
+    "full_name": "MiniF2F.Test.algebra_sqineq_unitcircatbpamblt1"
+  },
+  "MiniF2F.Test.algebra_sum1onsqrt2to1onsqrt10000lt198": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/algebra_sum1onsqrt2to1onsqrt10000lt198.lean",
+    "full_name": "MiniF2F.Test.algebra_sum1onsqrt2to1onsqrt10000lt198"
+  },
+  "MiniF2F.Test.amc12_2000_p1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12_2000_p1.lean",
+    "full_name": "MiniF2F.Test.amc12_2000_p1"
+  },
+  "MiniF2F.Test.amc12_2000_p12": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12_2000_p12.lean",
+    "full_name": "MiniF2F.Test.amc12_2000_p12"
+  },
+  "MiniF2F.Test.amc12_2000_p20": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12_2000_p20.lean",
+    "full_name": "MiniF2F.Test.amc12_2000_p20"
+  },
+  "MiniF2F.Test.amc12_2000_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12_2000_p6.lean",
+    "full_name": "MiniF2F.Test.amc12_2000_p6"
+  },
+  "MiniF2F.Test.amc12_2001_p21": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12_2001_p21.lean",
+    "full_name": "MiniF2F.Test.amc12_2001_p21"
+  },
+  "MiniF2F.Test.amc12_2001_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12_2001_p5.lean",
+    "full_name": "MiniF2F.Test.amc12_2001_p5"
+  },
+  "MiniF2F.Test.amc12a_2002_p13": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2002_p13.lean",
+    "full_name": "MiniF2F.Test.amc12a_2002_p13"
+  },
+  "MiniF2F.Test.amc12a_2002_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2002_p6.lean",
+    "full_name": "MiniF2F.Test.amc12a_2002_p6"
+  },
+  "MiniF2F.Test.amc12a_2003_p23": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2003_p23.lean",
+    "full_name": "MiniF2F.Test.amc12a_2003_p23"
+  },
+  "MiniF2F.Test.amc12a_2003_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2003_p5.lean",
+    "full_name": "MiniF2F.Test.amc12a_2003_p5"
+  },
+  "MiniF2F.Test.amc12a_2008_p25": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2008_p25.lean",
+    "full_name": "MiniF2F.Test.amc12a_2008_p25"
+  },
+  "MiniF2F.Test.amc12a_2009_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2009_p6.lean",
+    "full_name": "MiniF2F.Test.amc12a_2009_p6"
+  },
+  "MiniF2F.Test.amc12a_2009_p7": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2009_p7.lean",
+    "full_name": "MiniF2F.Test.amc12a_2009_p7"
+  },
+  "MiniF2F.Test.amc12a_2013_p4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2013_p4.lean",
+    "full_name": "MiniF2F.Test.amc12a_2013_p4"
+  },
+  "MiniF2F.Test.amc12a_2019_p12": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2019_p12.lean",
+    "full_name": "MiniF2F.Test.amc12a_2019_p12"
+  },
+  "MiniF2F.Test.amc12a_2020_p10": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2020_p10.lean",
+    "full_name": "MiniF2F.Test.amc12a_2020_p10"
+  },
+  "MiniF2F.Test.amc12a_2020_p15": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2020_p15.lean",
+    "full_name": "MiniF2F.Test.amc12a_2020_p15"
+  },
+  "MiniF2F.Test.amc12a_2020_p25": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2020_p25.lean",
+    "full_name": "MiniF2F.Test.amc12a_2020_p25"
+  },
+  "MiniF2F.Test.amc12a_2020_p4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2020_p4.lean",
+    "full_name": "MiniF2F.Test.amc12a_2020_p4"
+  },
+  "MiniF2F.Test.amc12a_2020_p7": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2020_p7.lean",
+    "full_name": "MiniF2F.Test.amc12a_2020_p7"
+  },
+  "MiniF2F.Test.amc12a_2020_p9": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2020_p9.lean",
+    "full_name": "MiniF2F.Test.amc12a_2020_p9"
+  },
+  "MiniF2F.Test.amc12a_2021_p12": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2021_p12.lean",
+    "full_name": "MiniF2F.Test.amc12a_2021_p12"
+  },
+  "MiniF2F.Test.amc12a_2021_p14": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2021_p14.lean",
+    "full_name": "MiniF2F.Test.amc12a_2021_p14"
+  },
+  "MiniF2F.Test.amc12a_2021_p18": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2021_p18.lean",
+    "full_name": "MiniF2F.Test.amc12a_2021_p18"
+  },
+  "MiniF2F.Test.amc12a_2021_p19": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2021_p19.lean",
+    "full_name": "MiniF2F.Test.amc12a_2021_p19"
+  },
+  "MiniF2F.Test.amc12a_2021_p22": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2021_p22.lean",
+    "full_name": "MiniF2F.Test.amc12a_2021_p22"
+  },
+  "MiniF2F.Test.amc12a_2021_p25": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2021_p25.lean",
+    "full_name": "MiniF2F.Test.amc12a_2021_p25"
+  },
+  "MiniF2F.Test.amc12a_2021_p3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2021_p3.lean",
+    "full_name": "MiniF2F.Test.amc12a_2021_p3"
+  },
+  "MiniF2F.Test.amc12a_2021_p8": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2021_p8.lean",
+    "full_name": "MiniF2F.Test.amc12a_2021_p8"
+  },
+  "MiniF2F.Test.amc12a_2021_p9": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12a_2021_p9.lean",
+    "full_name": "MiniF2F.Test.amc12a_2021_p9"
+  },
+  "MiniF2F.Test.amc12b_2002_p19": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2002_p19.lean",
+    "full_name": "MiniF2F.Test.amc12b_2002_p19"
+  },
+  "MiniF2F.Test.amc12b_2002_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2002_p2.lean",
+    "full_name": "MiniF2F.Test.amc12b_2002_p2"
+  },
+  "MiniF2F.Test.amc12b_2002_p4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2002_p4.lean",
+    "full_name": "MiniF2F.Test.amc12b_2002_p4"
+  },
+  "MiniF2F.Test.amc12b_2002_p7": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2002_p7.lean",
+    "full_name": "MiniF2F.Test.amc12b_2002_p7"
+  },
+  "MiniF2F.Test.amc12b_2020_p13": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2020_p13.lean",
+    "full_name": "MiniF2F.Test.amc12b_2020_p13"
+  },
+  "MiniF2F.Test.amc12b_2020_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2020_p2.lean",
+    "full_name": "MiniF2F.Test.amc12b_2020_p2"
+  },
+  "MiniF2F.Test.amc12b_2020_p21": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2020_p21.lean",
+    "full_name": "MiniF2F.Test.amc12b_2020_p21"
+  },
+  "MiniF2F.Test.amc12b_2020_p22": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2020_p22.lean",
+    "full_name": "MiniF2F.Test.amc12b_2020_p22"
+  },
+  "MiniF2F.Test.amc12b_2020_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2020_p6.lean",
+    "full_name": "MiniF2F.Test.amc12b_2020_p6"
+  },
+  "MiniF2F.Test.amc12b_2021_p1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2021_p1.lean",
+    "full_name": "MiniF2F.Test.amc12b_2021_p1"
+  },
+  "MiniF2F.Test.amc12b_2021_p13": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2021_p13.lean",
+    "full_name": "MiniF2F.Test.amc12b_2021_p13"
+  },
+  "MiniF2F.Test.amc12b_2021_p18": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2021_p18.lean",
+    "full_name": "MiniF2F.Test.amc12b_2021_p18"
+  },
+  "MiniF2F.Test.amc12b_2021_p3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2021_p3.lean",
+    "full_name": "MiniF2F.Test.amc12b_2021_p3"
+  },
+  "MiniF2F.Test.amc12b_2021_p4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2021_p4.lean",
+    "full_name": "MiniF2F.Test.amc12b_2021_p4"
+  },
+  "MiniF2F.Test.amc12b_2021_p9": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/amc12b_2021_p9.lean",
+    "full_name": "MiniF2F.Test.amc12b_2021_p9"
+  },
+  "MiniF2F.Test.imo_1959_p1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1959_p1.lean",
+    "full_name": "MiniF2F.Test.imo_1959_p1"
+  },
+  "MiniF2F.Test.imo_1960_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1960_p2.lean",
+    "full_name": "MiniF2F.Test.imo_1960_p2"
+  },
+  "MiniF2F.Test.imo_1962_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1962_p2.lean",
+    "full_name": "MiniF2F.Test.imo_1962_p2"
+  },
+  "MiniF2F.Test.imo_1963_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1963_p5.lean",
+    "full_name": "MiniF2F.Test.imo_1963_p5"
+  },
+  "MiniF2F.Test.imo_1964_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1964_p2.lean",
+    "full_name": "MiniF2F.Test.imo_1964_p2"
+  },
+  "MiniF2F.Test.imo_1965_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1965_p2.lean",
+    "full_name": "MiniF2F.Test.imo_1965_p2"
+  },
+  "MiniF2F.Test.imo_1968_p5_1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1968_p5_1.lean",
+    "full_name": "MiniF2F.Test.imo_1968_p5_1"
+  },
+  "MiniF2F.Test.imo_1969_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1969_p2.lean",
+    "full_name": "MiniF2F.Test.imo_1969_p2"
+  },
+  "MiniF2F.Test.imo_1974_p3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1974_p3.lean",
+    "full_name": "MiniF2F.Test.imo_1974_p3"
+  },
+  "MiniF2F.Test.imo_1977_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1977_p6.lean",
+    "full_name": "MiniF2F.Test.imo_1977_p6"
+  },
+  "MiniF2F.Test.imo_1981_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1981_p6.lean",
+    "full_name": "MiniF2F.Test.imo_1981_p6"
+  },
+  "MiniF2F.Test.imo_1982_p1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1982_p1.lean",
+    "full_name": "MiniF2F.Test.imo_1982_p1"
+  },
+  "MiniF2F.Test.imo_1983_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1983_p6.lean",
+    "full_name": "MiniF2F.Test.imo_1983_p6"
+  },
+  "MiniF2F.Test.imo_1984_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1984_p6.lean",
+    "full_name": "MiniF2F.Test.imo_1984_p6"
+  },
+  "MiniF2F.Test.imo_1985_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1985_p6.lean",
+    "full_name": "MiniF2F.Test.imo_1985_p6"
+  },
+  "MiniF2F.Test.imo_1992_p1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1992_p1.lean",
+    "full_name": "MiniF2F.Test.imo_1992_p1"
+  },
+  "MiniF2F.Test.imo_1997_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_1997_p5.lean",
+    "full_name": "MiniF2F.Test.imo_1997_p5"
+  },
+  "MiniF2F.Test.imo_2001_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_2001_p6.lean",
+    "full_name": "MiniF2F.Test.imo_2001_p6"
+  },
+  "MiniF2F.Test.imo_2019_p1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imo_2019_p1.lean",
+    "full_name": "MiniF2F.Test.imo_2019_p1"
+  },
+  "MiniF2F.Test.imosl_2007_algebra_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/imosl_2007_algebra_p6.lean",
+    "full_name": "MiniF2F.Test.imosl_2007_algebra_p6"
+  },
+  "MiniF2F.Test.induction_11div10tonmn1ton": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/induction_11div10tonmn1ton.lean",
+    "full_name": "MiniF2F.Test.induction_11div10tonmn1ton"
+  },
+  "MiniF2F.Test.induction_12dvd4expnp1p20": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/induction_12dvd4expnp1p20.lean",
+    "full_name": "MiniF2F.Test.induction_12dvd4expnp1p20"
+  },
+  "MiniF2F.Test.induction_1pxpownlt1pnx": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/induction_1pxpownlt1pnx.lean",
+    "full_name": "MiniF2F.Test.induction_1pxpownlt1pnx"
+  },
+  "MiniF2F.Test.induction_nfactltnexpnm1ngt3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/induction_nfactltnexpnm1ngt3.lean",
+    "full_name": "MiniF2F.Test.induction_nfactltnexpnm1ngt3"
+  },
+  "MiniF2F.Test.induction_pord1p1on2powklt5on2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/induction_pord1p1on2powklt5on2.lean",
+    "full_name": "MiniF2F.Test.induction_pord1p1on2powklt5on2"
+  },
+  "MiniF2F.Test.induction_pprime_pdvdapowpma": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/induction_pprime_pdvdapowpma.lean",
+    "full_name": "MiniF2F.Test.induction_pprime_pdvdapowpma"
+  },
+  "MiniF2F.Test.induction_prod1p1onk3le3m1onn": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/induction_prod1p1onk3le3m1onn.lean",
+    "full_name": "MiniF2F.Test.induction_prod1p1onk3le3m1onn"
+  },
+  "MiniF2F.Test.induction_sumkexp3eqsumksq": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/induction_sumkexp3eqsumksq.lean",
+    "full_name": "MiniF2F.Test.induction_sumkexp3eqsumksq"
+  },
+  "MiniF2F.Test.mathd_algebra_107": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_107.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_107"
+  },
+  "MiniF2F.Test.mathd_algebra_113": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_113.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_113"
+  },
+  "MiniF2F.Test.mathd_algebra_114": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_114.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_114"
+  },
+  "MiniF2F.Test.mathd_algebra_125": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_125.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_125"
+  },
+  "MiniF2F.Test.mathd_algebra_129": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_129.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_129"
+  },
+  "MiniF2F.Test.mathd_algebra_137": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_137.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_137"
+  },
+  "MiniF2F.Test.mathd_algebra_139": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_139.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_139"
+  },
+  "MiniF2F.Test.mathd_algebra_141": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_141.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_141"
+  },
+  "MiniF2F.Test.mathd_algebra_142": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_142.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_142"
+  },
+  "MiniF2F.Test.mathd_algebra_143": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_143.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_143"
+  },
+  "MiniF2F.Test.mathd_algebra_148": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_148.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_148"
+  },
+  "MiniF2F.Test.mathd_algebra_153": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_153.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_153"
+  },
+  "MiniF2F.Test.mathd_algebra_156": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_156.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_156"
+  },
+  "MiniF2F.Test.mathd_algebra_158": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_158.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_158"
+  },
+  "MiniF2F.Test.mathd_algebra_160": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_160.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_160"
+  },
+  "MiniF2F.Test.mathd_algebra_17": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_17.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_17"
+  },
+  "MiniF2F.Test.mathd_algebra_170": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_170.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_170"
+  },
+  "MiniF2F.Test.mathd_algebra_171": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_171.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_171"
+  },
+  "MiniF2F.Test.mathd_algebra_176": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_176.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_176"
+  },
+  "MiniF2F.Test.mathd_algebra_184": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_184.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_184"
+  },
+  "MiniF2F.Test.mathd_algebra_188": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_188.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_188"
+  },
+  "MiniF2F.Test.mathd_algebra_196": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_196.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_196"
+  },
+  "MiniF2F.Test.mathd_algebra_208": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_208.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_208"
+  },
+  "MiniF2F.Test.mathd_algebra_209": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_209.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_209"
+  },
+  "MiniF2F.Test.mathd_algebra_215": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_215.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_215"
+  },
+  "MiniF2F.Test.mathd_algebra_24": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_24.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_24"
+  },
+  "MiniF2F.Test.mathd_algebra_246": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_246.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_246"
+  },
+  "MiniF2F.Test.mathd_algebra_263": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_263.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_263"
+  },
+  "MiniF2F.Test.mathd_algebra_270": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_270.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_270"
+  },
+  "MiniF2F.Test.mathd_algebra_275": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_275.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_275"
+  },
+  "MiniF2F.Test.mathd_algebra_276": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_276.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_276"
+  },
+  "MiniF2F.Test.mathd_algebra_288": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_288.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_288"
+  },
+  "MiniF2F.Test.mathd_algebra_289": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_289.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_289"
+  },
+  "MiniF2F.Test.mathd_algebra_293": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_293.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_293"
+  },
+  "MiniF2F.Test.mathd_algebra_296": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_296.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_296"
+  },
+  "MiniF2F.Test.mathd_algebra_302": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_302.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_302"
+  },
+  "MiniF2F.Test.mathd_algebra_304": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_304.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_304"
+  },
+  "MiniF2F.Test.mathd_algebra_313": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_313.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_313"
+  },
+  "MiniF2F.Test.mathd_algebra_314": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_314.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_314"
+  },
+  "MiniF2F.Test.mathd_algebra_320": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_320.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_320"
+  },
+  "MiniF2F.Test.mathd_algebra_329": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_329.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_329"
+  },
+  "MiniF2F.Test.mathd_algebra_33": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_33.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_33"
+  },
+  "MiniF2F.Test.mathd_algebra_332": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_332.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_332"
+  },
+  "MiniF2F.Test.mathd_algebra_338": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_338.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_338"
+  },
+  "MiniF2F.Test.mathd_algebra_342": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_342.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_342"
+  },
+  "MiniF2F.Test.mathd_algebra_346": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_346.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_346"
+  },
+  "MiniF2F.Test.mathd_algebra_354": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_354.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_354"
+  },
+  "MiniF2F.Test.mathd_algebra_359": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_359.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_359"
+  },
+  "MiniF2F.Test.mathd_algebra_362": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_362.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_362"
+  },
+  "MiniF2F.Test.mathd_algebra_388": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_388.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_388"
+  },
+  "MiniF2F.Test.mathd_algebra_392": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_392.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_392"
+  },
+  "MiniF2F.Test.mathd_algebra_398": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_398.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_398"
+  },
+  "MiniF2F.Test.mathd_algebra_400": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_400.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_400"
+  },
+  "MiniF2F.Test.mathd_algebra_412": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_412.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_412"
+  },
+  "MiniF2F.Test.mathd_algebra_419": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_419.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_419"
+  },
+  "MiniF2F.Test.mathd_algebra_427": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_427.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_427"
+  },
+  "MiniF2F.Test.mathd_algebra_432": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_432.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_432"
+  },
+  "MiniF2F.Test.mathd_algebra_44": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_44.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_44"
+  },
+  "MiniF2F.Test.mathd_algebra_440": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_440.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_440"
+  },
+  "MiniF2F.Test.mathd_algebra_441": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_441.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_441"
+  },
+  "MiniF2F.Test.mathd_algebra_452": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_452.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_452"
+  },
+  "MiniF2F.Test.mathd_algebra_459": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_459.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_459"
+  },
+  "MiniF2F.Test.mathd_algebra_478": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_478.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_478"
+  },
+  "MiniF2F.Test.mathd_algebra_484": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_484.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_484"
+  },
+  "MiniF2F.Test.mathd_algebra_487": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_487.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_487"
+  },
+  "MiniF2F.Test.mathd_algebra_513": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_513.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_513"
+  },
+  "MiniF2F.Test.mathd_algebra_598": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_598.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_598"
+  },
+  "MiniF2F.Test.mathd_algebra_756": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_756.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_756"
+  },
+  "MiniF2F.Test.mathd_algebra_76": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_76.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_76"
+  },
+  "MiniF2F.Test.mathd_algebra_80": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_algebra_80.lean",
+    "full_name": "MiniF2F.Test.mathd_algebra_80"
+  },
+  "MiniF2F.Test.mathd_numbertheory_100": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_100.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_100"
+  },
+  "MiniF2F.Test.mathd_numbertheory_1124": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_1124.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_1124"
+  },
+  "MiniF2F.Test.mathd_numbertheory_12": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_12.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_12"
+  },
+  "MiniF2F.Test.mathd_numbertheory_127": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_127.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_127"
+  },
+  "MiniF2F.Test.mathd_numbertheory_135": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_135.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_135"
+  },
+  "MiniF2F.Test.mathd_numbertheory_150": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_150.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_150"
+  },
+  "MiniF2F.Test.mathd_numbertheory_175": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_175.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_175"
+  },
+  "MiniF2F.Test.mathd_numbertheory_185": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_185.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_185"
+  },
+  "MiniF2F.Test.mathd_numbertheory_207": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_207.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_207"
+  },
+  "MiniF2F.Test.mathd_numbertheory_212": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_212.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_212"
+  },
+  "MiniF2F.Test.mathd_numbertheory_222": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_222.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_222"
+  },
+  "MiniF2F.Test.mathd_numbertheory_227": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_227.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_227"
+  },
+  "MiniF2F.Test.mathd_numbertheory_229": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_229.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_229"
+  },
+  "MiniF2F.Test.mathd_numbertheory_233": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_233.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_233"
+  },
+  "MiniF2F.Test.mathd_numbertheory_234": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_234.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_234"
+  },
+  "MiniF2F.Test.mathd_numbertheory_235": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_235.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_235"
+  },
+  "MiniF2F.Test.mathd_numbertheory_237": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_237.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_237"
+  },
+  "MiniF2F.Test.mathd_numbertheory_239": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_239.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_239"
+  },
+  "MiniF2F.Test.mathd_numbertheory_247": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_247.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_247"
+  },
+  "MiniF2F.Test.mathd_numbertheory_254": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_254.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_254"
+  },
+  "MiniF2F.Test.mathd_numbertheory_277": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_277.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_277"
+  },
+  "MiniF2F.Test.mathd_numbertheory_293": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_293.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_293"
+  },
+  "MiniF2F.Test.mathd_numbertheory_296": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_296.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_296"
+  },
+  "MiniF2F.Test.mathd_numbertheory_299": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_299.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_299"
+  },
+  "MiniF2F.Test.mathd_numbertheory_3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_3.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_3"
+  },
+  "MiniF2F.Test.mathd_numbertheory_314": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_314.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_314"
+  },
+  "MiniF2F.Test.mathd_numbertheory_320": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_320.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_320"
+  },
+  "MiniF2F.Test.mathd_numbertheory_321": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_321.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_321"
+  },
+  "MiniF2F.Test.mathd_numbertheory_328": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_328.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_328"
+  },
+  "MiniF2F.Test.mathd_numbertheory_34": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_34.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_34"
+  },
+  "MiniF2F.Test.mathd_numbertheory_341": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_341.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_341"
+  },
+  "MiniF2F.Test.mathd_numbertheory_342": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_342.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_342"
+  },
+  "MiniF2F.Test.mathd_numbertheory_343": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_343.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_343"
+  },
+  "MiniF2F.Test.mathd_numbertheory_345": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_345.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_345"
+  },
+  "MiniF2F.Test.mathd_numbertheory_353": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_353.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_353"
+  },
+  "MiniF2F.Test.mathd_numbertheory_427": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_427.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_427"
+  },
+  "MiniF2F.Test.mathd_numbertheory_430": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_430.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_430"
+  },
+  "MiniF2F.Test.mathd_numbertheory_435": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_435.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_435"
+  },
+  "MiniF2F.Test.mathd_numbertheory_447": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_447.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_447"
+  },
+  "MiniF2F.Test.mathd_numbertheory_451": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_451.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_451"
+  },
+  "MiniF2F.Test.mathd_numbertheory_457": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_457.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_457"
+  },
+  "MiniF2F.Test.mathd_numbertheory_483": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_483.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_483"
+  },
+  "MiniF2F.Test.mathd_numbertheory_495": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_495.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_495"
+  },
+  "MiniF2F.Test.mathd_numbertheory_5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_5.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_5"
+  },
+  "MiniF2F.Test.mathd_numbertheory_517": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_517.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_517"
+  },
+  "MiniF2F.Test.mathd_numbertheory_521": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_521.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_521"
+  },
+  "MiniF2F.Test.mathd_numbertheory_541": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_541.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_541"
+  },
+  "MiniF2F.Test.mathd_numbertheory_551": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_551.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_551"
+  },
+  "MiniF2F.Test.mathd_numbertheory_552": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_552.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_552"
+  },
+  "MiniF2F.Test.mathd_numbertheory_559": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_559.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_559"
+  },
+  "MiniF2F.Test.mathd_numbertheory_582": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_582.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_582"
+  },
+  "MiniF2F.Test.mathd_numbertheory_618": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_618.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_618"
+  },
+  "MiniF2F.Test.mathd_numbertheory_66": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_66.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_66"
+  },
+  "MiniF2F.Test.mathd_numbertheory_711": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_711.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_711"
+  },
+  "MiniF2F.Test.mathd_numbertheory_728": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_728.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_728"
+  },
+  "MiniF2F.Test.mathd_numbertheory_764": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_764.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_764"
+  },
+  "MiniF2F.Test.mathd_numbertheory_765": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_765.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_765"
+  },
+  "MiniF2F.Test.mathd_numbertheory_769": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_769.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_769"
+  },
+  "MiniF2F.Test.mathd_numbertheory_85": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_85.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_85"
+  },
+  "MiniF2F.Test.mathd_numbertheory_99": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/mathd_numbertheory_99.lean",
+    "full_name": "MiniF2F.Test.mathd_numbertheory_99"
+  },
+  "MiniF2F.Test.numbertheory_2pownm1prime_nprime": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/numbertheory_2pownm1prime_nprime.lean",
+    "full_name": "MiniF2F.Test.numbertheory_2pownm1prime_nprime"
+  },
+  "MiniF2F.Test.numbertheory_3pow2pownm1mod2pownp3eq2pownp2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/numbertheory_3pow2pownm1mod2pownp3eq2pownp2.lean",
+    "full_name": "MiniF2F.Test.numbertheory_3pow2pownm1mod2pownp3eq2pownp2"
+  },
+  "MiniF2F.Test.numbertheory_4x3m7y3neq2003": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/numbertheory_4x3m7y3neq2003.lean",
+    "full_name": "MiniF2F.Test.numbertheory_4x3m7y3neq2003"
+  },
+  "MiniF2F.Test.numbertheory_aoddbdiv4asqpbsqmod8eq1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/numbertheory_aoddbdiv4asqpbsqmod8eq1.lean",
+    "full_name": "MiniF2F.Test.numbertheory_aoddbdiv4asqpbsqmod8eq1"
+  },
+  "MiniF2F.Test.numbertheory_exk2powkeqapb2mulbpa2_aeq1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/numbertheory_exk2powkeqapb2mulbpa2_aeq1.lean",
+    "full_name": "MiniF2F.Test.numbertheory_exk2powkeqapb2mulbpa2_aeq1"
+  },
+  "MiniF2F.Test.numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown.lean",
+    "full_name": "MiniF2F.Test.numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown"
+  },
+  "MiniF2F.Test.numbertheory_notEquiv2i2jasqbsqdiv8": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/numbertheory_notEquiv2i2jasqbsqdiv8.lean",
+    "full_name": "MiniF2F.Test.numbertheory_notEquiv2i2jasqbsqdiv8"
+  },
+  "MiniF2F.Test.numbertheory_x5neqy2p4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Test/numbertheory_x5neqy2p4.lean",
+    "full_name": "MiniF2F.Test.numbertheory_x5neqy2p4"
+  },
+  "MiniF2F.Valid.aimeII_2001_p3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aimeII_2001_p3.lean",
+    "full_name": "MiniF2F.Valid.aimeII_2001_p3"
+  },
+  "MiniF2F.Valid.aimeII_2020_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aimeII_2020_p6.lean",
+    "full_name": "MiniF2F.Valid.aimeII_2020_p6"
+  },
+  "MiniF2F.Valid.aimeI_2000_p7": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aimeI_2000_p7.lean",
+    "full_name": "MiniF2F.Valid.aimeI_2000_p7"
+  },
+  "MiniF2F.Valid.aime_1983_p9": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aime_1983_p9.lean",
+    "full_name": "MiniF2F.Valid.aime_1983_p9"
+  },
+  "MiniF2F.Valid.aime_1984_p15": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aime_1984_p15.lean",
+    "full_name": "MiniF2F.Valid.aime_1984_p15"
+  },
+  "MiniF2F.Valid.aime_1984_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aime_1984_p5.lean",
+    "full_name": "MiniF2F.Valid.aime_1984_p5"
+  },
+  "MiniF2F.Valid.aime_1987_p8": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aime_1987_p8.lean",
+    "full_name": "MiniF2F.Valid.aime_1987_p8"
+  },
+  "MiniF2F.Valid.aime_1988_p3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aime_1988_p3.lean",
+    "full_name": "MiniF2F.Valid.aime_1988_p3"
+  },
+  "MiniF2F.Valid.aime_1988_p4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aime_1988_p4.lean",
+    "full_name": "MiniF2F.Valid.aime_1988_p4"
+  },
+  "MiniF2F.Valid.aime_1990_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aime_1990_p2.lean",
+    "full_name": "MiniF2F.Valid.aime_1990_p2"
+  },
+  "MiniF2F.Valid.aime_1991_p1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aime_1991_p1.lean",
+    "full_name": "MiniF2F.Valid.aime_1991_p1"
+  },
+  "MiniF2F.Valid.aime_1991_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aime_1991_p6.lean",
+    "full_name": "MiniF2F.Valid.aime_1991_p6"
+  },
+  "MiniF2F.Valid.aime_1994_p4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aime_1994_p4.lean",
+    "full_name": "MiniF2F.Valid.aime_1994_p4"
+  },
+  "MiniF2F.Valid.aime_1996_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aime_1996_p5.lean",
+    "full_name": "MiniF2F.Valid.aime_1996_p5"
+  },
+  "MiniF2F.Valid.aime_1997_p11": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/aime_1997_p11.lean",
+    "full_name": "MiniF2F.Valid.aime_1997_p11"
+  },
+  "MiniF2F.Valid.algebra_2complexrootspoly_xsqp49eqxp7itxpn7i": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_2complexrootspoly_xsqp49eqxp7itxpn7i.lean",
+    "full_name": "MiniF2F.Valid.algebra_2complexrootspoly_xsqp49eqxp7itxpn7i"
+  },
+  "MiniF2F.Valid.algebra_2rootsintpoly_am10tap11eqasqpam110": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_2rootsintpoly_am10tap11eqasqpam110.lean",
+    "full_name": "MiniF2F.Valid.algebra_2rootsintpoly_am10tap11eqasqpam110"
+  },
+  "MiniF2F.Valid.algebra_2rootspoly_apatapbeq2asqp2ab": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_2rootspoly_apatapbeq2asqp2ab.lean",
+    "full_name": "MiniF2F.Valid.algebra_2rootspoly_apatapbeq2asqp2ab"
+  },
+  "MiniF2F.Valid.algebra_2varlineareq_xpeeq7_2xpeeq3_eeq11_xeqn4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_2varlineareq_xpeeq7_2xpeeq3_eeq11_xeqn4.lean",
+    "full_name": "MiniF2F.Valid.algebra_2varlineareq_xpeeq7_2xpeeq3_eeq11_xeqn4"
+  },
+  "MiniF2F.Valid.algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta.lean",
+    "full_name": "MiniF2F.Valid.algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta"
+  },
+  "MiniF2F.Valid.algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x.lean",
+    "full_name": "MiniF2F.Valid.algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x"
+  },
+  "MiniF2F.Valid.algebra_amgm_prod1toneq1_sum1tongeqn": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_amgm_prod1toneq1_sum1tongeqn.lean",
+    "full_name": "MiniF2F.Valid.algebra_amgm_prod1toneq1_sum1tongeqn"
+  },
+  "MiniF2F.Valid.algebra_amgm_sqrtxymulxmyeqxpy_xpygeq4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_amgm_sqrtxymulxmyeqxpy_xpygeq4.lean",
+    "full_name": "MiniF2F.Valid.algebra_amgm_sqrtxymulxmyeqxpy_xpygeq4"
+  },
+  "MiniF2F.Valid.algebra_amgm_sumasqdivbsqgeqsumbdiva": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_amgm_sumasqdivbsqgeqsumbdiva.lean",
+    "full_name": "MiniF2F.Valid.algebra_amgm_sumasqdivbsqgeqsumbdiva"
+  },
+  "MiniF2F.Valid.algebra_apb4leq8ta4pb4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_apb4leq8ta4pb4.lean",
+    "full_name": "MiniF2F.Valid.algebra_apb4leq8ta4pb4"
+  },
+  "MiniF2F.Valid.algebra_binomnegdiscrineq_10alt28asqp1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_binomnegdiscrineq_10alt28asqp1.lean",
+    "full_name": "MiniF2F.Valid.algebra_binomnegdiscrineq_10alt28asqp1"
+  },
+  "MiniF2F.Valid.algebra_manipexpr_2erprsqpesqeqnrpnesq": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_manipexpr_2erprsqpesqeqnrpnesq.lean",
+    "full_name": "MiniF2F.Valid.algebra_manipexpr_2erprsqpesqeqnrpnesq"
+  },
+  "MiniF2F.Valid.algebra_manipexpr_apbeq2cceqiacpbceqm2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_manipexpr_apbeq2cceqiacpbceqm2.lean",
+    "full_name": "MiniF2F.Valid.algebra_manipexpr_apbeq2cceqiacpbceqm2"
+  },
+  "MiniF2F.Valid.algebra_sqineq_2at2pclta2c2p41pc": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_sqineq_2at2pclta2c2p41pc.lean",
+    "full_name": "MiniF2F.Valid.algebra_sqineq_2at2pclta2c2p41pc"
+  },
+  "MiniF2F.Valid.algebra_sqineq_2unitcircatblt1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_sqineq_2unitcircatblt1.lean",
+    "full_name": "MiniF2F.Valid.algebra_sqineq_2unitcircatblt1"
+  },
+  "MiniF2F.Valid.algebra_sqineq_36azm9asqle36zsq": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_sqineq_36azm9asqle36zsq.lean",
+    "full_name": "MiniF2F.Valid.algebra_sqineq_36azm9asqle36zsq"
+  },
+  "MiniF2F.Valid.algebra_sqineq_4bap1lt4bsqpap1sq": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_sqineq_4bap1lt4bsqpap1sq.lean",
+    "full_name": "MiniF2F.Valid.algebra_sqineq_4bap1lt4bsqpap1sq"
+  },
+  "MiniF2F.Valid.algebra_xmysqpymzsqpzmxsqeqxyz_xpypzp6dvdx3y3z3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/algebra_xmysqpymzsqpzmxsqeqxyz_xpypzp6dvdx3y3z3.lean",
+    "full_name": "MiniF2F.Valid.algebra_xmysqpymzsqpzmxsqeqxyz_xpypzp6dvdx3y3z3"
+  },
+  "MiniF2F.Valid.amc12_2000_p11": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12_2000_p11.lean",
+    "full_name": "MiniF2F.Valid.amc12_2000_p11"
+  },
+  "MiniF2F.Valid.amc12_2000_p15": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12_2000_p15.lean",
+    "full_name": "MiniF2F.Valid.amc12_2000_p15"
+  },
+  "MiniF2F.Valid.amc12_2000_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12_2000_p5.lean",
+    "full_name": "MiniF2F.Valid.amc12_2000_p5"
+  },
+  "MiniF2F.Valid.amc12_2001_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12_2001_p2.lean",
+    "full_name": "MiniF2F.Valid.amc12_2001_p2"
+  },
+  "MiniF2F.Valid.amc12_2001_p9": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12_2001_p9.lean",
+    "full_name": "MiniF2F.Valid.amc12_2001_p9"
+  },
+  "MiniF2F.Valid.amc12a_2002_p1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2002_p1.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2002_p1"
+  },
+  "MiniF2F.Valid.amc12a_2002_p12": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2002_p12.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2002_p12"
+  },
+  "MiniF2F.Valid.amc12a_2002_p21": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2002_p21.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2002_p21"
+  },
+  "MiniF2F.Valid.amc12a_2003_p1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2003_p1.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2003_p1"
+  },
+  "MiniF2F.Valid.amc12a_2003_p24": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2003_p24.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2003_p24"
+  },
+  "MiniF2F.Valid.amc12a_2003_p25": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2003_p25.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2003_p25"
+  },
+  "MiniF2F.Valid.amc12a_2008_p15": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2008_p15.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2008_p15"
+  },
+  "MiniF2F.Valid.amc12a_2008_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2008_p2.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2008_p2"
+  },
+  "MiniF2F.Valid.amc12a_2008_p4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2008_p4.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2008_p4"
+  },
+  "MiniF2F.Valid.amc12a_2008_p8": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2008_p8.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2008_p8"
+  },
+  "MiniF2F.Valid.amc12a_2009_p15": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2009_p15.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2009_p15"
+  },
+  "MiniF2F.Valid.amc12a_2009_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2009_p2.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2009_p2"
+  },
+  "MiniF2F.Valid.amc12a_2009_p25": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2009_p25.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2009_p25"
+  },
+  "MiniF2F.Valid.amc12a_2009_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2009_p5.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2009_p5"
+  },
+  "MiniF2F.Valid.amc12a_2009_p9": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2009_p9.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2009_p9"
+  },
+  "MiniF2F.Valid.amc12a_2010_p10": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2010_p10.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2010_p10"
+  },
+  "MiniF2F.Valid.amc12a_2010_p11": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2010_p11.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2010_p11"
+  },
+  "MiniF2F.Valid.amc12a_2010_p22": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2010_p22.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2010_p22"
+  },
+  "MiniF2F.Valid.amc12a_2011_p18": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2011_p18.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2011_p18"
+  },
+  "MiniF2F.Valid.amc12a_2013_p7": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2013_p7.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2013_p7"
+  },
+  "MiniF2F.Valid.amc12a_2013_p8": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2013_p8.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2013_p8"
+  },
+  "MiniF2F.Valid.amc12a_2015_p10": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2015_p10.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2015_p10"
+  },
+  "MiniF2F.Valid.amc12a_2016_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2016_p2.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2016_p2"
+  },
+  "MiniF2F.Valid.amc12a_2016_p3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2016_p3.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2016_p3"
+  },
+  "MiniF2F.Valid.amc12a_2017_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2017_p2.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2017_p2"
+  },
+  "MiniF2F.Valid.amc12a_2017_p7": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2017_p7.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2017_p7"
+  },
+  "MiniF2F.Valid.amc12a_2019_p21": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2019_p21.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2019_p21"
+  },
+  "MiniF2F.Valid.amc12a_2019_p9": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2019_p9.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2019_p9"
+  },
+  "MiniF2F.Valid.amc12a_2020_p13": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2020_p13.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2020_p13"
+  },
+  "MiniF2F.Valid.amc12a_2020_p21": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2020_p21.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2020_p21"
+  },
+  "MiniF2F.Valid.amc12a_2021_p7": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12a_2021_p7.lean",
+    "full_name": "MiniF2F.Valid.amc12a_2021_p7"
+  },
+  "MiniF2F.Valid.amc12b_2002_p11": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12b_2002_p11.lean",
+    "full_name": "MiniF2F.Valid.amc12b_2002_p11"
+  },
+  "MiniF2F.Valid.amc12b_2002_p3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12b_2002_p3.lean",
+    "full_name": "MiniF2F.Valid.amc12b_2002_p3"
+  },
+  "MiniF2F.Valid.amc12b_2002_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12b_2002_p6.lean",
+    "full_name": "MiniF2F.Valid.amc12b_2002_p6"
+  },
+  "MiniF2F.Valid.amc12b_2003_p17": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12b_2003_p17.lean",
+    "full_name": "MiniF2F.Valid.amc12b_2003_p17"
+  },
+  "MiniF2F.Valid.amc12b_2003_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12b_2003_p6.lean",
+    "full_name": "MiniF2F.Valid.amc12b_2003_p6"
+  },
+  "MiniF2F.Valid.amc12b_2003_p9": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12b_2003_p9.lean",
+    "full_name": "MiniF2F.Valid.amc12b_2003_p9"
+  },
+  "MiniF2F.Valid.amc12b_2004_p3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12b_2004_p3.lean",
+    "full_name": "MiniF2F.Valid.amc12b_2004_p3"
+  },
+  "MiniF2F.Valid.amc12b_2020_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12b_2020_p5.lean",
+    "full_name": "MiniF2F.Valid.amc12b_2020_p5"
+  },
+  "MiniF2F.Valid.amc12b_2021_p21": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/amc12b_2021_p21.lean",
+    "full_name": "MiniF2F.Valid.amc12b_2021_p21"
+  },
+  "MiniF2F.Valid.imo_1961_p1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1961_p1.lean",
+    "full_name": "MiniF2F.Valid.imo_1961_p1"
+  },
+  "MiniF2F.Valid.imo_1962_p4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1962_p4.lean",
+    "full_name": "MiniF2F.Valid.imo_1962_p4"
+  },
+  "MiniF2F.Valid.imo_1964_p1_1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1964_p1_1.lean",
+    "full_name": "MiniF2F.Valid.imo_1964_p1_1"
+  },
+  "MiniF2F.Valid.imo_1964_p1_2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1964_p1_2.lean",
+    "full_name": "MiniF2F.Valid.imo_1964_p1_2"
+  },
+  "MiniF2F.Valid.imo_1965_p1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1965_p1.lean",
+    "full_name": "MiniF2F.Valid.imo_1965_p1"
+  },
+  "MiniF2F.Valid.imo_1966_p4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1966_p4.lean",
+    "full_name": "MiniF2F.Valid.imo_1966_p4"
+  },
+  "MiniF2F.Valid.imo_1966_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1966_p5.lean",
+    "full_name": "MiniF2F.Valid.imo_1966_p5"
+  },
+  "MiniF2F.Valid.imo_1967_p3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1967_p3.lean",
+    "full_name": "MiniF2F.Valid.imo_1967_p3"
+  },
+  "MiniF2F.Valid.imo_1973_p3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1973_p3.lean",
+    "full_name": "MiniF2F.Valid.imo_1973_p3"
+  },
+  "MiniF2F.Valid.imo_1974_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1974_p5.lean",
+    "full_name": "MiniF2F.Valid.imo_1974_p5"
+  },
+  "MiniF2F.Valid.imo_1977_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1977_p5.lean",
+    "full_name": "MiniF2F.Valid.imo_1977_p5"
+  },
+  "MiniF2F.Valid.imo_1978_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1978_p5.lean",
+    "full_name": "MiniF2F.Valid.imo_1978_p5"
+  },
+  "MiniF2F.Valid.imo_1979_p1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1979_p1.lean",
+    "full_name": "MiniF2F.Valid.imo_1979_p1"
+  },
+  "MiniF2F.Valid.imo_1984_p2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1984_p2.lean",
+    "full_name": "MiniF2F.Valid.imo_1984_p2"
+  },
+  "MiniF2F.Valid.imo_1987_p4": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1987_p4.lean",
+    "full_name": "MiniF2F.Valid.imo_1987_p4"
+  },
+  "MiniF2F.Valid.imo_1987_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1987_p6.lean",
+    "full_name": "MiniF2F.Valid.imo_1987_p6"
+  },
+  "MiniF2F.Valid.imo_1988_p6": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1988_p6.lean",
+    "full_name": "MiniF2F.Valid.imo_1988_p6"
+  },
+  "MiniF2F.Valid.imo_1990_p3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1990_p3.lean",
+    "full_name": "MiniF2F.Valid.imo_1990_p3"
+  },
+  "MiniF2F.Valid.imo_1993_p5": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_1993_p5.lean",
+    "full_name": "MiniF2F.Valid.imo_1993_p5"
+  },
+  "MiniF2F.Valid.imo_2006_p3": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/imo_2006_p3.lean",
+    "full_name": "MiniF2F.Valid.imo_2006_p3"
+  },
+  "MiniF2F.Valid.induction_divisibility_3div2tooddnp1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/induction_divisibility_3div2tooddnp1.lean",
+    "full_name": "MiniF2F.Valid.induction_divisibility_3div2tooddnp1"
+  },
+  "MiniF2F.Valid.induction_divisibility_3divnto3m2n": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/induction_divisibility_3divnto3m2n.lean",
+    "full_name": "MiniF2F.Valid.induction_divisibility_3divnto3m2n"
+  },
+  "MiniF2F.Valid.induction_divisibility_9div10tonm1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/induction_divisibility_9div10tonm1.lean",
+    "full_name": "MiniF2F.Valid.induction_divisibility_9div10tonm1"
+  },
+  "MiniF2F.Valid.induction_ineq_nsqlefactn": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/induction_ineq_nsqlefactn.lean",
+    "full_name": "MiniF2F.Valid.induction_ineq_nsqlefactn"
+  },
+  "MiniF2F.Valid.induction_seq_mul2pnp1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/induction_seq_mul2pnp1.lean",
+    "full_name": "MiniF2F.Valid.induction_seq_mul2pnp1"
+  },
+  "MiniF2F.Valid.induction_sum2kp1npqsqm1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/induction_sum2kp1npqsqm1.lean",
+    "full_name": "MiniF2F.Valid.induction_sum2kp1npqsqm1"
+  },
+  "MiniF2F.Valid.induction_sum_1oktkp1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/induction_sum_1oktkp1.lean",
+    "full_name": "MiniF2F.Valid.induction_sum_1oktkp1"
+  },
+  "MiniF2F.Valid.induction_sum_odd": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/induction_sum_odd.lean",
+    "full_name": "MiniF2F.Valid.induction_sum_odd"
+  },
+  "MiniF2F.Valid.mathd_algebra_10": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_10.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_10"
+  },
+  "MiniF2F.Valid.mathd_algebra_101": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_101.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_101"
+  },
+  "MiniF2F.Valid.mathd_algebra_104": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_104.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_104"
+  },
+  "MiniF2F.Valid.mathd_algebra_109": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_109.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_109"
+  },
+  "MiniF2F.Valid.mathd_algebra_11": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_11.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_11"
+  },
+  "MiniF2F.Valid.mathd_algebra_110": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_110.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_110"
+  },
+  "MiniF2F.Valid.mathd_algebra_116": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_116.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_116"
+  },
+  "MiniF2F.Valid.mathd_algebra_119": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_119.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_119"
+  },
+  "MiniF2F.Valid.mathd_algebra_123": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_123.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_123"
+  },
+  "MiniF2F.Valid.mathd_algebra_126": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_126.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_126"
+  },
+  "MiniF2F.Valid.mathd_algebra_13": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_13.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_13"
+  },
+  "MiniF2F.Valid.mathd_algebra_131": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_131.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_131"
+  },
+  "MiniF2F.Valid.mathd_algebra_132": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_132.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_132"
+  },
+  "MiniF2F.Valid.mathd_algebra_140": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_140.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_140"
+  },
+  "MiniF2F.Valid.mathd_algebra_144": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_144.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_144"
+  },
+  "MiniF2F.Valid.mathd_algebra_149": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_149.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_149"
+  },
+  "MiniF2F.Valid.mathd_algebra_15": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_15.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_15"
+  },
+  "MiniF2F.Valid.mathd_algebra_151": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_151.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_151"
+  },
+  "MiniF2F.Valid.mathd_algebra_159": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_159.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_159"
+  },
+  "MiniF2F.Valid.mathd_algebra_181": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_181.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_181"
+  },
+  "MiniF2F.Valid.mathd_algebra_182": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_182.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_182"
+  },
+  "MiniF2F.Valid.mathd_algebra_185": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_185.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_185"
+  },
+  "MiniF2F.Valid.mathd_algebra_190": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_190.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_190"
+  },
+  "MiniF2F.Valid.mathd_algebra_192": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_192.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_192"
+  },
+  "MiniF2F.Valid.mathd_algebra_206": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_206.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_206"
+  },
+  "MiniF2F.Valid.mathd_algebra_214": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_214.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_214"
+  },
+  "MiniF2F.Valid.mathd_algebra_22": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_22.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_22"
+  },
+  "MiniF2F.Valid.mathd_algebra_224": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_224.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_224"
+  },
+  "MiniF2F.Valid.mathd_algebra_234": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_234.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_234"
+  },
+  "MiniF2F.Valid.mathd_algebra_245": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_245.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_245"
+  },
+  "MiniF2F.Valid.mathd_algebra_247": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_247.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_247"
+  },
+  "MiniF2F.Valid.mathd_algebra_251": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_251.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_251"
+  },
+  "MiniF2F.Valid.mathd_algebra_267": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_267.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_267"
+  },
+  "MiniF2F.Valid.mathd_algebra_28": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_28.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_28"
+  },
+  "MiniF2F.Valid.mathd_algebra_282": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_282.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_282"
+  },
+  "MiniF2F.Valid.mathd_algebra_31": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_31.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_31"
+  },
+  "MiniF2F.Valid.mathd_algebra_323": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_323.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_323"
+  },
+  "MiniF2F.Valid.mathd_algebra_327": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_327.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_327"
+  },
+  "MiniF2F.Valid.mathd_algebra_35": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_35.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_35"
+  },
+  "MiniF2F.Valid.mathd_algebra_37": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_37.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_37"
+  },
+  "MiniF2F.Valid.mathd_algebra_393": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_393.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_393"
+  },
+  "MiniF2F.Valid.mathd_algebra_405": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_405.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_405"
+  },
+  "MiniF2F.Valid.mathd_algebra_410": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_410.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_410"
+  },
+  "MiniF2F.Valid.mathd_algebra_421": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_421.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_421"
+  },
+  "MiniF2F.Valid.mathd_algebra_422": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_422.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_422"
+  },
+  "MiniF2F.Valid.mathd_algebra_43": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_43.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_43"
+  },
+  "MiniF2F.Valid.mathd_algebra_433": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_433.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_433"
+  },
+  "MiniF2F.Valid.mathd_algebra_437": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_437.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_437"
+  },
+  "MiniF2F.Valid.mathd_algebra_451": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_451.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_451"
+  },
+  "MiniF2F.Valid.mathd_algebra_455": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_455.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_455"
+  },
+  "MiniF2F.Valid.mathd_algebra_462": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_462.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_462"
+  },
+  "MiniF2F.Valid.mathd_algebra_48": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_48.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_48"
+  },
+  "MiniF2F.Valid.mathd_algebra_480": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_480.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_480"
+  },
+  "MiniF2F.Valid.mathd_algebra_482": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_482.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_482"
+  },
+  "MiniF2F.Valid.mathd_algebra_493": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_493.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_493"
+  },
+  "MiniF2F.Valid.mathd_algebra_509": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_509.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_509"
+  },
+  "MiniF2F.Valid.mathd_algebra_51": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_51.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_51"
+  },
+  "MiniF2F.Valid.mathd_algebra_510": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_510.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_510"
+  },
+  "MiniF2F.Valid.mathd_algebra_536": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_536.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_536"
+  },
+  "MiniF2F.Valid.mathd_algebra_547": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_547.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_547"
+  },
+  "MiniF2F.Valid.mathd_algebra_55": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_55.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_55"
+  },
+  "MiniF2F.Valid.mathd_algebra_568": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_568.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_568"
+  },
+  "MiniF2F.Valid.mathd_algebra_59": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_59.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_59"
+  },
+  "MiniF2F.Valid.mathd_algebra_616": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_616.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_616"
+  },
+  "MiniF2F.Valid.mathd_algebra_67": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_67.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_67"
+  },
+  "MiniF2F.Valid.mathd_algebra_69": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_69.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_69"
+  },
+  "MiniF2F.Valid.mathd_algebra_73": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_73.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_73"
+  },
+  "MiniF2F.Valid.mathd_algebra_77": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_77.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_77"
+  },
+  "MiniF2F.Valid.mathd_algebra_89": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_89.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_89"
+  },
+  "MiniF2F.Valid.mathd_algebra_96": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_algebra_96.lean",
+    "full_name": "MiniF2F.Valid.mathd_algebra_96"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_101": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_101.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_101"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_102": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_102.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_102"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_109": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_109.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_109"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_110": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_110.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_110"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_126": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_126.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_126"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_13": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_13.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_13"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_132": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_132.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_132"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_136": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_136.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_136"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_149": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_149.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_149"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_155": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_155.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_155"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_156": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_156.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_156"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_169": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_169.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_169"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_188": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_188.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_188"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_198": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_198.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_198"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_200": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_200.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_200"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_202": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_202.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_202"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_211": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_211.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_211"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_22": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_22.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_22"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_221": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_221.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_221"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_232": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_232.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_232"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_236": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_236.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_236"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_24": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_24.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_24"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_252": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_252.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_252"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_257": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_257.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_257"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_269": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_269.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_269"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_284": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_284.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_284"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_30": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_30.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_30"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_301": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_301.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_301"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_303": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_303.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_303"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_32": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_32.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_32"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_326": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_326.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_326"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_33": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_33.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_33"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_335": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_335.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_335"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_35": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_35.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_35"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_37": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_37.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_37"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_370": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_370.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_370"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_403": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_403.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_403"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_405": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_405.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_405"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_412": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_412.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_412"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_42": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_42.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_42"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_43": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_43.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_43"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_45": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_45.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_45"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_458": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_458.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_458"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_461": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_461.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_461"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_466": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_466.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_466"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_48": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_48.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_48"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_530": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_530.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_530"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_543": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_543.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_543"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_629": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_629.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_629"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_64": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_64.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_64"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_640": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_640.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_640"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_668": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_668.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_668"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_690": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_690.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_690"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_709": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_709.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_709"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_739": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_739.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_739"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_780": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_780.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_780"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_81": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_81.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_81"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_84": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_84.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_84"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_92": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_92.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_92"
+  },
+  "MiniF2F.Valid.mathd_numbertheory_961": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/mathd_numbertheory_961.lean",
+    "full_name": "MiniF2F.Valid.mathd_numbertheory_961"
+  },
+  "MiniF2F.Valid.numbertheory_2dvd4expn": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/numbertheory_2dvd4expn.lean",
+    "full_name": "MiniF2F.Valid.numbertheory_2dvd4expn"
+  },
+  "MiniF2F.Valid.numbertheory_aneqprodakp4_anmsqrtanp1eq2": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/numbertheory_aneqprodakp4_anmsqrtanp1eq2.lean",
+    "full_name": "MiniF2F.Valid.numbertheory_aneqprodakp4_anmsqrtanp1eq2"
+  },
+  "MiniF2F.Valid.numbertheory_nckeqnm1ckpnm1ckm1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/numbertheory_nckeqnm1ckpnm1ckm1.lean",
+    "full_name": "MiniF2F.Valid.numbertheory_nckeqnm1ckpnm1ckm1"
+  },
+  "MiniF2F.Valid.numbertheory_prmdvsneqnsqmodpeq0": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/numbertheory_prmdvsneqnsqmodpeq0.lean",
+    "full_name": "MiniF2F.Valid.numbertheory_prmdvsneqnsqmodpeq0"
+  },
+  "MiniF2F.Valid.numbertheory_sqmod3in01d": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/numbertheory_sqmod3in01d.lean",
+    "full_name": "MiniF2F.Valid.numbertheory_sqmod3in01d"
+  },
+  "MiniF2F.Valid.numbertheory_sqmod4in01d": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/numbertheory_sqmod4in01d.lean",
+    "full_name": "MiniF2F.Valid.numbertheory_sqmod4in01d"
+  },
+  "MiniF2F.Valid.numbertheory_sumkmulnckeqnmul2pownm1": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/numbertheory_sumkmulnckeqnmul2pownm1.lean",
+    "full_name": "MiniF2F.Valid.numbertheory_sumkmulnckeqnmul2pownm1"
+  },
+  "MiniF2F.Valid.numbertheory_xsqpysqintdenomeq": {
+    "repo_url": "https://github.com/yangky11/miniF2F-lean4",
+    "commit": "6306b5f55f627383dfaefba69a9d1dd410b463bf",
+    "file_path": "MiniF2F/Valid/numbertheory_xsqpysqintdenomeq.lean",
+    "full_name": "MiniF2F.Valid.numbertheory_xsqpysqintdenomeq"
+  }
+}
