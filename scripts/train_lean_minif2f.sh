@@ -21,8 +21,10 @@ WORK_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 # ---- Model ----
 #MODEL_PATH="${MODEL_PATH:-/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775}"
-MODEL_PATH="${MODEL_PATH:-Qwen/Qwen2.5-Math-7B-Instruct}"
-MODEL_TAG="${MODEL_TAG:-Q2.5-M-7b}"
+#MODEL_PATH="${MODEL_PATH:-Qwen/Qwen2.5-Math-7B-Instruct}"
+MODEL_PATH="${MODEL_PATH:-deepseek-ai/DeepSeek-Prover-V1.5-SFT}"
+#MODEL_TAG="${MODEL_TAG:-Q2.5-M-7b}"
+MODEL_TAG="${MODEL_TAG:-D1.5-P-7b-SFT}"
 
 # ---- Data (local JSONL) ----
 TRAIN_DATA="${WORK_DIR}/data/minif2f_valid.jsonl"
@@ -68,8 +70,8 @@ ROLLOUT_ARGS=(
 
     # --- Sequence lengths ---
     # miniF2F prompts are ~200-800 tokens; tactic responses are short.
-    --prompt_max_len 2048
-    --generate_max_len 2048
+    --prompt_max_len 4096
+    --generate_max_len 4096
 
     # --- Batch sizes ---
     # Each rollout spawns a Lean REPL (~5s per step), so keep batch modest.

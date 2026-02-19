@@ -267,7 +267,7 @@ class AgentInstance(AgentInstanceBase):
                 done=True,
                 feedback="\n\n[ERROR] Lean REPL is not available.\n",
                 states=states,
-                extra={"error_type": "repl_unavailable"},
+                extra={"error_type": "repl_unavailable", "steps": self.step_idx},
             )
 
         # Extract tactic from LLM output
@@ -278,7 +278,7 @@ class AgentInstance(AgentInstanceBase):
                 done=True,
                 feedback="\n\n[ERROR] Could not extract a tactic from the response.\n",
                 states=states,
-                extra={"error_type": "no_tactic"},
+                extra={"error_type": "no_tactic", "steps": self.step_idx},
             )
 
         # Send tactic to the REPL
@@ -295,7 +295,7 @@ class AgentInstance(AgentInstanceBase):
                 done=True,
                 feedback=f"\n\n[ERROR] REPL communication failed: {str(exc)[:200]}\n",
                 states=states,
-                extra={"error_type": "repl_comm_error"},
+                extra={"error_type": "repl_comm_error", "steps": self.step_idx},
             )
 
         error = resp.get("error")
@@ -310,7 +310,7 @@ class AgentInstance(AgentInstanceBase):
                 done=True,
                 feedback=f"\n\n[LEAN_ERROR] {error}\n",
                 states=states,
-                extra={"error_type": "lean_error", "lean_error": error[:500]},
+                extra={"error_type": "lean_error", "lean_error": error[:500], "steps": self.step_idx},
             )
 
         # ---- ProofFinished -----
@@ -332,7 +332,7 @@ class AgentInstance(AgentInstanceBase):
                 done=True,
                 feedback="\n\n[PROOF_GIVEN_UP] No tactic state returned.\n",
                 states=states,
-                extra={"error_type": "proof_given_up"},
+                extra={"error_type": "proof_given_up", "steps": self.step_idx},
             )
 
         # ---- TacticState (continue proving) -----
@@ -349,7 +349,7 @@ class AgentInstance(AgentInstanceBase):
                     f"Last goal:\n{tactic_state}\n"
                 ),
                 states=states,
-                extra={"error_type": "max_steps"},
+                extra={"error_type": "max_steps", "steps": self.step_idx},
             )
 
         feedback = (
