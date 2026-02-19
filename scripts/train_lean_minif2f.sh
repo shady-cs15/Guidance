@@ -22,6 +22,7 @@ WORK_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 # ---- Model ----
 #MODEL_PATH="${MODEL_PATH:-/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775}"
 MODEL_PATH="${MODEL_PATH:-Qwen/Qwen2.5-Math-7B-Instruct}"
+MODEL_TAG="${MODEL_TAG:-Q2.5-M-7b}"
 
 # ---- Data (local JSONL) ----
 TRAIN_DATA="${WORK_DIR}/data/minif2f_valid.jsonl"
@@ -85,8 +86,8 @@ ROLLOUT_ARGS=(
     --num_episodes 5
 
     # --- Dynamic filtering: drop rollouts with reward outside [0, 1] ---
-    --dynamic_filtering
-    --dynamic_filtering_reward_range 0.0 1.0
+    # --dynamic_filtering
+    # --dynamic_filtering_reward_range 0.0 1.0
 
     # --- Token-level dynamic batching ---
     --use_dynamic_batch
@@ -136,11 +137,10 @@ LOG_ARGS=(
     --logging_steps 1
     --eval_steps -1
 
-    # Uncomment for W&B logging:
-    # --use_wandb enabled
-    # --wandb_org "${WANDB_ENTITY:-}"
-    # --wandb_project guidance-lean
-    # --wandb_run_name "lean_minif2f_$(date +%m%dT%H%M)"
+    --use_wandb enabled
+    --wandb_org "${WANDB_ENTITY:-}"
+    --wandb_project guidance-lean
+    --wandb_run_name "${MODEL_TAG}-lean_minif2f_$(date +%m%dT%H%M)"
 )
 
 # ============================================================================
@@ -150,6 +150,7 @@ LOG_ARGS=(
 echo "================================================================"
 echo "  Lean miniF2F RL Training"
 echo "  Model:     ${MODEL_PATH}"
+echo "  Model Tag: ${MODEL_TAG}"
 echo "  Data:      ${TRAIN_DATA}"
 echo "  Save:      ${SAVE_PATH}"
 echo "  GPUs:      8× H200"
