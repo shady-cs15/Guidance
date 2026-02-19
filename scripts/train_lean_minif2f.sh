@@ -20,7 +20,8 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 WORK_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 # ---- Model ----
-MODEL_PATH="${MODEL_PATH:-/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775}"
+#MODEL_PATH="${MODEL_PATH:-/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775}"
+MODEL_PATH="${MODEL_PATH:-Qwen/Qwen2.5-Math-7B-Instruct}"
 
 # ---- Data (local JSONL) ----
 TRAIN_DATA="${WORK_DIR}/data/minif2f_valid.jsonl"
@@ -31,14 +32,13 @@ AGENT_FUNC_PATH="${WORK_DIR}/examples/python/agent_func_lean_minif2f.py"
 # ---- Output ----
 SAVE_PATH="${WORK_DIR}/exp/lean_minif2f_$(date +%Y%m%d)"
 
-# ---- HuggingFace ----
-export HF_TOKEN="${HF_TOKEN:-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}"
 
 # ---- Lean REPL tuning (exported so the agent process picks them up) ----
 export LEAN_REPL_TIMEOUT="${LEAN_REPL_TIMEOUT:-300}"   # seconds per REPL response
 export LEAN_THREADS="${LEAN_THREADS:-4}"                # --threads for lake env lean
 export LEAN_MEMORY="${LEAN_MEMORY:-32768}"              # --memory (MiB) for lake env lean
-export LEAN_MAX_STEPS="${LEAN_MAX_STEPS:-100}"          # max tactic steps per proof
+export LEAN_MAX_STEPS="${LEAN_MAX_STEPS:-10}"          # max tactic steps per proof
+export HF_HUB_OFFLINE=0                                 # download model from hub 
 
 # ============================================================================
 # Arguments — grouped for readability
@@ -46,6 +46,8 @@ export LEAN_MAX_STEPS="${LEAN_MAX_STEPS:-100}"          # max tactic steps per p
 
 CKPT_ARGS=(
     --pretrain "${MODEL_PATH}"
+    --hf_token "${HF_TOKEN}"
+    --hf_hub_offline 0
     --load_checkpoint
 
     --save_path "${SAVE_PATH}"
@@ -65,17 +67,17 @@ ROLLOUT_ARGS=(
 
     # --- Sequence lengths ---
     # miniF2F prompts are ~200-800 tokens; tactic responses are short.
-    --prompt_max_len 4096
+    --prompt_max_len 2048
     --generate_max_len 2048
 
     # --- Batch sizes ---
     # Each rollout spawns a Lean REPL (~5s per step), so keep batch modest.
-    --rollout_batch_size 32
+    --rollout_batch_size 64
     --n_samples_per_prompt 4
-    --micro_rollout_batch_size 1
+    --micro_rollout_batch_size 2
 
-    --train_batch_size 32
-    --micro_train_batch_size 1
+    --train_batch_size 64
+    --micro_train_batch_size 2
 
     # --- Dataset / epoch control ---
     --max_samples 1000
@@ -101,15 +103,16 @@ ENGINE_ARGS=(
     # For 0.5B: 1 GPU actor + ref colocated, 1 vLLM engine TP=1
     # For 7B+:  bump actor_num_gpus_per_node=4, vllm_num_engines=2, vllm_tensor_parallel_size=2
     --actor_num_nodes 1
-    --actor_num_gpus_per_node 1
+    --actor_num_gpus_per_node 8
     --ref_num_nodes 1
-    --ref_num_gpus_per_node 1
+    --ref_num_gpus_per_node 8
     --colocate_all_models
     --deepspeed_enable_sleep
+    --vllm_enable_sleep
 
-    --vllm_num_engines 1
+    --vllm_num_engines 8
     --vllm_tensor_parallel_size 1
-    --vllm_gpu_memory_utilization 0.7
+    --vllm_gpu_memory_utilization 0.6
     --vllm_sync_backend nccl
     --enforce_eager
 

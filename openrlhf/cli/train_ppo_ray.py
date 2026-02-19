@@ -19,11 +19,15 @@ from openrlhf.utils import get_strategy
 def train(args):
     # initialize ray if not initialized
     if not ray.is_initialized():
+        print('========================================================')
+        print(f"HF_TOKEN: args.hf_token")
+        print(f"HF_HUB_OFFLINE: args.hf_hub_offline")
+        print('========================================================')
         ray.init(runtime_env={"env_vars": {
             "TOKENIZERS_PARALLELISM": "true",
             "NCCL_DEBUG": "WARN",
-            "HF_TOKEN": os.environ.get("HF_TOKEN", ""),
-            "HF_HUB_OFFLINE": os.environ.get("HF_HUB_OFFLINE", "1"),
+            "HF_TOKEN": args.hf_token,
+            "HF_HUB_OFFLINE": str(args.hf_hub_offline),
             "HF_HOME": os.environ.get("HF_HOME", os.path.expanduser("~/.cache/huggingface")),
             "PYTHONPATH": "/root/Guidance/.venv/lib/python3.12/site-packages:"
                           + os.environ.get("PYTHONPATH", ""),
@@ -285,6 +289,11 @@ if __name__ == "__main__":
     parser.add_argument(
         "--use_ds_universal_ckpt", action="store_true", help="Use deepspeed universal checkpoint", default=False
     )
+
+    # HuggingFace
+    parser.add_argument("--hf_token", type=str, default="")
+    parser.add_argument("--hf_hub_offline", type=int, default=0)
+
 
     # DeepSpeed
     parser.add_argument("--local_rank", type=int, default=-1, help="local_rank for deepspeed")
