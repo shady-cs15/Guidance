@@ -70,8 +70,8 @@ ROLLOUT_ARGS=(
 
     # --- Sequence lengths ---
     # miniF2F prompts are ~200-800 tokens; tactic responses are short.
-    --prompt_max_len 4096
-    --generate_max_len 4096
+    --prompt_max_len 2048
+    --generate_max_len 2048
 
     # --- Batch sizes ---
     # Each rollout spawns a Lean REPL (~5s per step), so keep batch modest.
