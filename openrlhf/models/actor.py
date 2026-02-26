@@ -21,7 +21,7 @@ class Actor(nn.Module):
 
     Args:
         pretrain_or_model (nn.Module): A pretrained model or a new model instance to be used as the actor.
-        attn_implementation (str, optional): Attention mechanism implementation to use. Defaults to "flash_attention_2".
+        attn_implementation (str, optional): Attention mechanism implementation to use. Defaults to "sdpa".
         param_dtype (str, optional): Model data type ("bf16", "fp16"). Defaults to "bf16".
         load_in_4bit (bool, optional): Load the model in 4-bit precision. Defaults to False.
         lora_rank (int, optional): Rank for LoRA adaptation. Defaults to 0.
@@ -38,7 +38,7 @@ class Actor(nn.Module):
     def __init__(
         self,
         pretrain_or_model,
-        attn_implementation="flash_attention_2",
+        attn_implementation="sdpa",
         param_dtype="bf16",
         load_in_4bit=False,
         lora_rank=0,

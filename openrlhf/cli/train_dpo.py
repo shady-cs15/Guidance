@@ -208,8 +208,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--attn_implementation",
         type=str,
-        default="flash_attention_2",
-        help="Attention implementation (e.g., eager, flash_attention_2, flash_attention_3, kernels-community/vllm-flash-attn3)",
+        default="sdpa",
+        help="Attention implementation (e.g., eager, sdpa, flash_attention_2, flash_attention_3, kernels-community/vllm-flash-attn3)",
     )
     parser.add_argument("--use_liger_kernel", action="store_true", default=False, help="Enable Liger Kernel")
     parser.add_argument("--grad_accum_dtype", type=str, default=None, help="Adam grad accum data type")
@@ -311,11 +311,10 @@ if __name__ == "__main__":
     if args.ring_attn_size > 1:
         assert args.packing_samples, "packing_samples must be enabled when using ring attention"
 
-    if args.packing_samples and "flash_attention" not in args.attn_implementation:
+    if args.packing_samples and args.attn_implementation == "eager":
         print(
-            "[Warning] Please use --attn_implementation with flash_attention to accelerate when --packing_samples is enabled."
+            "[Warning] Consider using --attn_implementation sdpa or flash_attention to accelerate when --packing_samples is enabled."
         )
-        args.attn_implementation = "flash_attention_2"
 
     if args.use_ms:
         from modelscope.utils.hf_util import patch_hub

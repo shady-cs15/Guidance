@@ -316,8 +316,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--attn_implementation",
         type=str,
-        default="flash_attention_2",
-        help="Attention implementation (e.g., eager, flash_attention_2, flash_attention_3, kernels-community/vllm-flash-attn3)",
+        default="sdpa",
+        help="Attention implementation (e.g., eager, sdpa, flash_attention_2, flash_attention_3, kernels-community/vllm-flash-attn3)",
     )
     parser.add_argument("--use_liger_kernel", action="store_true", default=False, help="Enable Liger Kernel")
     parser.add_argument("--grad_accum_dtype", type=str, default=None, help="Adam grad accum data type")
@@ -556,11 +556,10 @@ if __name__ == "__main__":
             args.rollout_max_tokens_per_gpu = args.train_max_tokens_per_gpu
 
     if args.packing_samples:
-        if "flash_attention" not in args.attn_implementation:
+        if args.attn_implementation == "eager":
             print(
-                "[Warning] Please use --attn_implementation with flash_attention to accelerate when --packing_samples is enabled."
+                "[Warning] Consider using --attn_implementation sdpa or flash_attention to accelerate when --packing_samples is enabled."
             )
-            args.attn_implementation = "flash_attention_2"
         assert args.vllm_num_engines > 0, "Only support `--packing_samples` with vLLM."
 
     if args.vllm_enable_sleep and not args.colocate_all_models:

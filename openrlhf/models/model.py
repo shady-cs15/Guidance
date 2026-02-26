@@ -28,7 +28,7 @@ def get_llm_for_sequence_regression(
     target_modules=None,
     lora_dropout=0,
     normalize_reward=False,
-    attn_implementation="flash_attention_2",
+    attn_implementation="sdpa",
     ds_config: dict = None,
     init_value_head=False,
     value_head_prefix="score",

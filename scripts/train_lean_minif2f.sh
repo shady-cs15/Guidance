@@ -155,7 +155,7 @@ echo "  Model:     ${MODEL_PATH}"
 echo "  Model Tag: ${MODEL_TAG}"
 echo "  Data:      ${TRAIN_DATA}"
 echo "  Save:      ${SAVE_PATH}"
-echo "  GPUs:      8× H200"
+echo "  GPUs:      8× B200"
 echo "  Agent:     ${AGENT_FUNC_PATH}"
 echo "================================================================"
 
@@ -171,7 +171,7 @@ ray job submit --address="http://127.0.0.1:8265" \
             ".venv"
         ]
     }' \
-    -- /root/Guidance/.venv/bin/python3 -m openrlhf.cli.train_ppo_ray \
+    -- python3 -m openrlhf.cli.train_ppo_ray \
     "${CKPT_ARGS[@]}" \
     "${ROLLOUT_ARGS[@]}" \
     "${ENGINE_ARGS[@]}" \

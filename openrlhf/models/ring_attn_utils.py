@@ -1,7 +1,49 @@
 import torch
+import torch.nn.functional as F
 import torch.distributed as dist
-from flash_attn.bert_padding import index_first_axis, pad_input, rearrange, unpad_input
-from flash_attn.utils.distributed import all_gather
+
+# Try to import from flash_attn, fall back to alternatives
+try:
+    from flash_attn.bert_padding import index_first_axis, pad_input, rearrange, unpad_input
+except ImportError:
+    # Fallback: use einops for rearrange and implement simple versions of other functions
+    from einops import rearrange
+
+    def index_first_axis(tensor, indices):
+        """Fallback implementation for index_first_axis"""
+        return tensor[indices]
+
+    def unpad_input(hidden_states, attention_mask):
+        """Fallback implementation for unpad_input"""
+        seqlens_in_batch = attention_mask.sum(dim=-1, dtype=torch.int32)
+        indices = torch.nonzero(attention_mask.flatten(), as_tuple=False).flatten()
+        max_seqlen_in_batch = seqlens_in_batch.max().item()
+        cu_seqlens = F.pad(torch.cumsum(seqlens_in_batch, dim=0, dtype=torch.int32), (1, 0))
+        return (
+            index_first_axis(rearrange(hidden_states, "b s ... -> (b s) ..."), indices),
+            indices,
+            cu_seqlens,
+            max_seqlen_in_batch,
+            seqlens_in_batch,
+        )
+
+    def pad_input(hidden_states, indices, batch, seqlen):
+        """Fallback implementation for pad_input"""
+        output = torch.zeros(batch * seqlen, *hidden_states.shape[1:],
+                           dtype=hidden_states.dtype, device=hidden_states.device)
+        output[indices] = hidden_states
+        return rearrange(output, "(b s) ... -> b s ...", b=batch)
+
+try:
+    from flash_attn.utils.distributed import all_gather
+except ImportError:
+    # Fallback to torch.distributed
+    def all_gather(tensor, group):
+        """Fallback implementation for all_gather"""
+        world_size = dist.get_world_size(group=group)
+        tensor_list = [torch.zeros_like(tensor) for _ in range(world_size)]
+        dist.all_gather(tensor_list, tensor, group=group)
+        return torch.cat(tensor_list, dim=0)
 
 RING_ATTN_GROUP = None
 
