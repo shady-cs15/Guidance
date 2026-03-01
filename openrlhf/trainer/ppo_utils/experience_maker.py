@@ -457,7 +457,7 @@ class SamplesGenerator:
             if isinstance(value, (int, float, bool)):
                 info[key] = torch.tensor([value])
 
-        return Experience(
+        experience = Experience(
             sequences=sequences.unsqueeze(0),
             attention_mask=attention_mask.unsqueeze(0),
             action_mask=action_mask.unsqueeze(0),
@@ -468,6 +468,9 @@ class SamplesGenerator:
             scores=torch.tensor([score_val]) if score_val is not None else None,
             info=info,
         )
+        # Attach formatted trajectory for logging (ad-hoc attr, not part of dataclass).
+        experience.trajectory_text = response.get("trajectory_text", "")
+        return experience
 
 
 class RemoteExperienceMaker:

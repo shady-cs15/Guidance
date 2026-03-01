@@ -61,6 +61,7 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
 
         # Initialize tracking variables
         action_ranges = []
+        trajectory_steps = []
         total_reward = 0
         final_scores = 0
         extra_logs = {}
@@ -103,6 +104,13 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
             done = step_result["done"]
             extra_logs = step_result.get("extra_logs", {})
 
+            # Record this step for trajectory logging
+            trajectory_steps.append({
+                "step": len(trajectory_steps) + 1,
+                "action": action_text,
+                "feedback": environment_feedback_text,
+            })
+
             # Concatenate observation, action, and environment_feedback, then tokenize
             observation_text = observation_text + action_text + environment_feedback_text
             current_obs_tokens = (
@@ -128,6 +136,15 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
             if done:
                 break
 
+        # Format trajectory for logging
+        trajectory_parts = []
+        for ts in trajectory_steps:
+            trajectory_parts.append(
+                f"[Step {ts['step']}]\n{ts['action']}\n"
+                f"[Environment Feedback]\n{ts['feedback']}"
+            )
+        trajectory_text = "\n\n".join(trajectory_parts)
+
         # Store the final response when agent execution is complete
         final_response = {
             "prompt": prompt,
@@ -138,6 +155,7 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
             "action_ranges": action_ranges,
             "rollout_log_probs": rollout_log_probs,
             "extra_logs": extra_logs,
+            "trajectory_text": trajectory_text,
         }
         return final_response
 

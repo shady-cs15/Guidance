@@ -90,30 +90,36 @@ class WandbLogger:
 
         generated_samples = logs_dict.pop("generated_samples", None)
         if generated_samples and isinstance(generated_samples, list):
-            # Update rollout tracking with new samples
+            # Update rollout tracking with new samples.
+            # ``trajectory`` now contains the step-by-step agent interaction
+            # (action + environment feedback for every tactic step).
             for sample in generated_samples:
                 name = sample["name"]
                 if name not in self.rollout_tracking:
                     self.rollout_tracking[name] = {"prompt": sample["prompt"], "steps": {}}
                 self.rollout_tracking[name]["steps"][global_step] = {
-                    "response": sample["response"][:3000],  # truncate for wandb cell limits
+                    "trajectory": sample["trajectory"][:5000],  # truncate for wandb cell limits
                     "reward": sample["reward"],
                 }
 
             # Build rollout table: 3 fixed columns — name, prompt, solution
-            # The "solution" cell accumulates the model's output at every step.
+            # The "solution" cell accumulates the best trajectory at every
+            # global training step so progress is visible over time.
             columns = ["name", "prompt", "solution"]
             rows = []
             for name, entry in self.rollout_tracking.items():
                 step_texts = []
                 for s in sorted(entry["steps"]):
                     d = entry["steps"][s]
-                    step_texts.append(f"--- step {s} [reward={d['reward']:.2f}] ---\n{d['response']}")
+                    step_texts.append(
+                        f"=== global step {s} [reward={d['reward']:.2f}] ===\n"
+                        f"{d['trajectory']}"
+                    )
                 solution = "\n\n".join(step_texts)
                 rows.append([name, entry["prompt"], solution])
 
             table = self.handle.Table(columns=columns, data=rows)
-            self.handle.log({"train/rollout_table": table})
+            self.handle.log({"rollouts/train_rollouts": table})
 
         metrics = {k: v for k, v in logs_dict.items() if v is not None}
         logs = {"train/%s" % k: v for k, v in {**metrics, "global_step": global_step}.items()}
@@ -148,7 +154,7 @@ class TensorboardLogger:
                     sample = v[0]
                     formatted_text = (
                         f"**{sample['name']}**\n\n"
-                        f"Response:\n{sample['response'][:2000]}\n\n"
+                        f"Trajectory:\n{sample['trajectory'][:3000]}\n\n"
                         f"Reward: {sample['reward']:.4f}"
                     )
                     self.writer.add_text("train/generated_samples", formatted_text, global_step)

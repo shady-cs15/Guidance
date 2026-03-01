@@ -142,10 +142,14 @@ class BasePPOTrainer(ABC):
         """Collect best sample per prompt for wandb rollout table logging.
 
         For each unique prompt (keyed by theorem name), keep the sample with
-        the highest reward.  Returns a list of dicts with keys:
-        name, prompt, response, reward.
+        the highest reward.  The ``trajectory`` field contains the step-by-step
+        interaction (actions + environment feedback) produced by the agent.
+
+        Returns a list of dicts with keys:
+            name, prompt, trajectory, reward.
         """
-        prompt_best: Dict[str, tuple] = {}  # name -> (prompt_truncated, response, reward)
+        # name -> (prompt_truncated, trajectory, reward)
+        prompt_best: Dict[str, tuple] = {}
 
         for sample in rollout_samples:
             prompt = sample.prompts[0]
@@ -158,19 +162,22 @@ class BasePPOTrainer(ABC):
             except (json.JSONDecodeError, AttributeError, TypeError):
                 name = prompt[:100]
 
-            full_text = self.tokenizer.decode(sample.sequences[0], skip_special_tokens=True)
             reward = sample.rewards[0].item() if sample.rewards is not None else 0.0
 
-            # Strip the prompt prefix to isolate the model's response.
-            response = full_text[len(prompt):] if full_text.startswith(prompt) else full_text
+            # Use the step-level trajectory captured by the agent, falling
+            # back to the decoded full sequence if unavailable.
+            trajectory = getattr(sample, "trajectory_text", None)
+            if not trajectory:
+                full_text = self.tokenizer.decode(sample.sequences[0], skip_special_tokens=True)
+                trajectory = full_text[len(prompt):] if full_text.startswith(prompt) else full_text
 
             # Keep only the best (highest reward) sample per prompt.
             if name not in prompt_best or reward > prompt_best[name][2]:
-                prompt_best[name] = (prompt[:500], response, reward)
+                prompt_best[name] = (prompt[:500], trajectory, reward)
 
         return [
-            {"name": name, "prompt": p, "response": resp, "reward": r}
-            for name, (p, resp, r) in prompt_best.items()
+            {"name": name, "prompt": p, "trajectory": traj, "reward": r}
+            for name, (p, traj, r) in prompt_best.items()
         ]
 
     def ppo_train(self, global_steps: int) -> Dict:
