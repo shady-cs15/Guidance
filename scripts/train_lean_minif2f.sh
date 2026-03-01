@@ -82,8 +82,8 @@ ROLLOUT_ARGS=(
 
     # --- Batch sizes ---
     # Each rollout spawns a Lean REPL (~5s per step), so keep batch modest.
-    --rollout_batch_size 64
-    --n_samples_per_prompt 4
+    --rollout_batch_size 32
+    --n_samples_per_prompt 16
     --micro_rollout_batch_size 2
 
     --train_batch_size 64
@@ -91,7 +91,7 @@ ROLLOUT_ARGS=(
 
     # --- Dataset / epoch control ---
     --max_samples 1000
-    --max_epochs 1
+    --max_epochs 25
     --num_episodes 5
 
     # --- Dynamic filtering: drop rollouts with reward outside [0, 1] ---
@@ -133,18 +133,18 @@ ENGINE_ARGS=(
 )
 
 OPTIMIZER_ARGS=(
-    --advantage_estimator reinforce_baseline
+    --advantage_estimator group_norm #reinforce_baseline
     --actor_learning_rate 5e-7
     --entropy_loss_coef 0.0
     --init_kl_coef 1e-3
     --use_kl_loss
-    --kl_estimator k2
+    --kl_estimator k3 #k2
 )
 
 LOG_ARGS=(
     --use_tensorboard "${SAVE_PATH}/runs"
     --logging_steps 1
-    --eval_steps 15
+    --eval_steps 30
 
     --use_wandb enabled
     --wandb_org "${WANDB_ENTITY:-}"
