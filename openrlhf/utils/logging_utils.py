@@ -80,18 +80,40 @@ class WandbLogger:
         wandb.define_metric("eval/epoch")
         wandb.define_metric("eval/*", step_metric="eval/epoch", step_sync=True)
         self.handle = wandb
-        self.samples_table = wandb.Table(columns=["global_step", "text", "reward"])
+
+        # Rollout table: tracks best proof attempt per prompt across training steps.
+        # Structure: { name: { "prompt": str, "steps": { global_step: {"response": str, "reward": float} } } }
+        self.rollout_tracking: Dict[str, Any] = {}
 
     def log_train(self, global_step: int, logs_dict: Dict[str, Any]) -> None:
         logs_dict = dict(logs_dict)
 
         generated_samples = logs_dict.pop("generated_samples", None)
-        if generated_samples:
-            # https://github.com/wandb/wandb/issues/2981#issuecomment-1997445737
-            new_table = self.handle.Table(columns=self.samples_table.columns, data=self.samples_table.data)
-            new_table.add_data(global_step, *generated_samples)
-            self.samples_table = new_table
-            self.handle.log({"train/generated_samples": new_table})
+        if generated_samples and isinstance(generated_samples, list):
+            # Update rollout tracking with new samples
+            for sample in generated_samples:
+                name = sample["name"]
+                if name not in self.rollout_tracking:
+                    self.rollout_tracking[name] = {"prompt": sample["prompt"], "steps": {}}
+                self.rollout_tracking[name]["steps"][global_step] = {
+                    "response": sample["response"][:3000],  # truncate for wandb cell limits
+                    "reward": sample["reward"],
+                }
+
+            # Build rollout table: 3 fixed columns — name, prompt, solution
+            # The "solution" cell accumulates the model's output at every step.
+            columns = ["name", "prompt", "solution"]
+            rows = []
+            for name, entry in self.rollout_tracking.items():
+                step_texts = []
+                for s in sorted(entry["steps"]):
+                    d = entry["steps"][s]
+                    step_texts.append(f"--- step {s} [reward={d['reward']:.2f}] ---\n{d['response']}")
+                solution = "\n\n".join(step_texts)
+                rows.append([name, entry["prompt"], solution])
+
+            table = self.handle.Table(columns=columns, data=rows)
+            self.handle.log({"train/rollout_table": table})
 
         metrics = {k: v for k, v in logs_dict.items() if v is not None}
         logs = {"train/%s" % k: v for k, v in {**metrics, "global_step": global_step}.items()}
@@ -119,12 +141,17 @@ class TensorboardLogger:
         self.writer = SummaryWriter(log_dir=log_dir)
 
     def log_train(self, global_step: int, logs_dict: Dict[str, Any]) -> None:
-        generated_samples = logs_dict.get("generated_samples")
         for k, v in logs_dict.items():
             if k == "generated_samples" and v is not None:
-                text, reward = generated_samples
-                formatted_text = f"Sample:\\n{text}\\n\\nReward: {reward:.4f}"
-                self.writer.add_text("train/generated_samples", formatted_text, global_step)
+                # Log a summary of the first rollout sample as text.
+                if isinstance(v, list) and v:
+                    sample = v[0]
+                    formatted_text = (
+                        f"**{sample['name']}**\n\n"
+                        f"Response:\n{sample['response'][:2000]}\n\n"
+                        f"Reward: {sample['reward']:.4f}"
+                    )
+                    self.writer.add_text("train/generated_samples", formatted_text, global_step)
             elif v is not None:
                 self.writer.add_scalar(f"train/{k}", v, global_step)
 

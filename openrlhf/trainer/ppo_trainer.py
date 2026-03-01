@@ -1,8 +1,9 @@
+import json
 import os
 import time
 from abc import ABC
 from datetime import timedelta
-from typing import Dict, Tuple
+from typing import Dict, List, Tuple
 
 import ray
 import torch
@@ -106,15 +107,11 @@ class BasePPOTrainer(ABC):
         raise NotImplementedError("fit method is not implemented")
 
     def train_step(self, rollout_samples, global_step: int) -> Tuple[Dict, int]:
+        # Collect rollout data for logging BEFORE batching.
+        rollout_log_data = self._collect_rollout_log_data(rollout_samples)
+
         # Turn raw rollouts into PPO-ready trajectories with rewards.
         experiences = self.experience_maker.make_experience_batch(rollout_samples)
-
-        # Peek at the first decoded sample for quick sanity check.
-        sample0 = [
-            self.tokenizer.batch_decode(experiences[0].sequences[0].unsqueeze(0), skip_special_tokens=True)[0],
-            experiences[0].info["reward"][0].item(),
-        ]
-        print(sample0)
 
         # Balance experiences across DP ranks if needed.
         if self.args.use_dynamic_batch:
@@ -138,8 +135,43 @@ class BasePPOTrainer(ABC):
             # TODO: KL controller must be FixedKLController; AdaptiveKLController is incompatible here.
             self.kl_ctl.update(status["kl"], self.args.rollout_batch_size * self.args.n_samples_per_prompt)
 
-        status["generated_samples"] = sample0
+        status["generated_samples"] = rollout_log_data
         return status, global_step + 1
+
+    def _collect_rollout_log_data(self, rollout_samples) -> List[Dict]:
+        """Collect best sample per prompt for wandb rollout table logging.
+
+        For each unique prompt (keyed by theorem name), keep the sample with
+        the highest reward.  Returns a list of dicts with keys:
+        name, prompt, response, reward.
+        """
+        prompt_best: Dict[str, tuple] = {}  # name -> (prompt_truncated, response, reward)
+
+        for sample in rollout_samples:
+            prompt = sample.prompts[0]
+            label_str = sample.labels[0] if sample.labels else ""
+
+            # Extract theorem name from the label JSON for a readable row key.
+            try:
+                label = json.loads(label_str) if isinstance(label_str, str) else label_str
+                name = label.get("name", prompt[:100])
+            except (json.JSONDecodeError, AttributeError, TypeError):
+                name = prompt[:100]
+
+            full_text = self.tokenizer.decode(sample.sequences[0], skip_special_tokens=True)
+            reward = sample.rewards[0].item() if sample.rewards is not None else 0.0
+
+            # Strip the prompt prefix to isolate the model's response.
+            response = full_text[len(prompt):] if full_text.startswith(prompt) else full_text
+
+            # Keep only the best (highest reward) sample per prompt.
+            if name not in prompt_best or reward > prompt_best[name][2]:
+                prompt_best[name] = (prompt[:500], response, reward)
+
+        return [
+            {"name": name, "prompt": p, "response": resp, "reward": r}
+            for name, (p, resp, r) in prompt_best.items()
+        ]
 
     def ppo_train(self, global_steps: int) -> Dict:
         """Run one PPO train step for critic + actor and return merged status dict."""

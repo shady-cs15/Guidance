@@ -28,7 +28,8 @@ MODEL_TAG="${MODEL_TAG:-D1.5-P-7b-SFT}"
 
 # ---- Data (local JSONL) ----
 TRAIN_DATA="${WORK_DIR}/data/minif2f_valid.jsonl"
-
+EVAL_DATA="${WORK_DIR}/data/minif2f_test.jsonl"
+VAL_DATA="${WORK_DIR}/data/minif2f_few_shot.jsonl"
 # ---- Agent ----
 AGENT_FUNC_PATH="${WORK_DIR}/examples/python/agent_func_lean_minif2f.py"
 
@@ -67,6 +68,12 @@ ROLLOUT_ARGS=(
     --input_key prompt
     --label_key label
     --apply_chat_template
+
+    # --- Evaluation dataset (miniF2F test, 244 problems) ---
+    --eval_dataset "${EVAL_DATA}"
+    --eval_split train
+    --eval_temperature 0.7
+    --eval_n_samples_per_prompt 1
 
     # --- Sequence lengths ---
     # miniF2F prompts are ~200-800 tokens; tactic responses are short.
@@ -137,7 +144,7 @@ OPTIMIZER_ARGS=(
 LOG_ARGS=(
     --use_tensorboard "${SAVE_PATH}/runs"
     --logging_steps 1
-    --eval_steps -1
+    --eval_steps 15
 
     --use_wandb enabled
     --wandb_org "${WANDB_ENTITY:-}"
