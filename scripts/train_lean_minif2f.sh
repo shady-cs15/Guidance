@@ -25,6 +25,8 @@ WORK_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 MODEL_PATH="${MODEL_PATH:-deepseek-ai/DeepSeek-Prover-V1.5-SFT}"
 #MODEL_TAG="${MODEL_TAG:-Q2.5-M-7b}"
 MODEL_TAG="${MODEL_TAG:-D1.5-P-7b-SFT}"
+DATASET_TAG="${DATASET_TAG:-minif2f}"
+ALGORITHM_TAG="${ALGORITHM_TAG:-GRPO}"
 
 # ---- Data (local JSONL) ----
 TRAIN_DATA="${WORK_DIR}/data/minif2f_valid.jsonl"
@@ -52,7 +54,7 @@ CKPT_ARGS=(
     --pretrain "${MODEL_PATH}"
     --hf_token "${HF_TOKEN}"
     --hf_hub_offline 0
-    --load_checkpoint
+    #--load_checkpoint # this is for resuming training
 
     --save_path "${SAVE_PATH}"
     --ckpt_path "${SAVE_PATH}/ckpt"
@@ -135,7 +137,7 @@ ENGINE_ARGS=(
 
 OPTIMIZER_ARGS=(
     --advantage_estimator group_norm #reinforce_baseline
-    --actor_learning_rate 5e-7
+    --actor_learning_rate 5e-6
     --entropy_loss_coef 0.0
     --init_kl_coef 1e-3
     --use_kl_loss
@@ -145,12 +147,12 @@ OPTIMIZER_ARGS=(
 LOG_ARGS=(
     --use_tensorboard "${SAVE_PATH}/runs"
     --logging_steps 1
-    --eval_steps 30
+    --eval_steps 15
 
     --use_wandb enabled
     --wandb_org "${WANDB_ENTITY:-}"
     --wandb_project guidance-lean
-    --wandb_run_name "${MODEL_TAG}-lean_minif2f_$(date +%m%dT%H%M)"
+    --wandb_run_name "${DATASET_TAG}-${ALGORITHM_TAG}-$(date +%m%dT%H%M)"
 )
 
 # ============================================================================
