@@ -311,10 +311,22 @@ class AgentInstance(AgentInstanceBase):
         # Extract tactic from LLM output
         tactic = _extract_tactic(action_text)
         if not tactic:
+            if self.step_idx >= self.max_steps:
+                self._cleanup()
+                return self._result(
+                    reward=0.0,
+                    done=True,
+                    feedback="\n\n[ERROR] Could not extract a tactic (max steps reached).\n",
+                    states=states,
+                    extra={"error_type": "no_tactic", "steps": self.step_idx},
+                )
             return self._result(
                 reward=0.0,
-                done=True,
-                feedback="\n\n[ERROR] Could not extract a tactic from the response.\n",
+                done=False,
+                feedback=(
+                    "\n\n[PARSE_ERROR] Could not extract a tactic from your response.\n"
+                    "Please provide exactly one tactic inside a ```lean code block.\n"
+                ),
                 states=states,
                 extra={"error_type": "no_tactic", "steps": self.step_idx},
             )
@@ -340,13 +352,25 @@ class AgentInstance(AgentInstanceBase):
         tactic_state = resp.get("tacticState")
         new_sid = resp.get("sid")
 
-        # ---- LeanError -----
+        # ---- LeanError (recoverable — proof state unchanged, let model retry) -----
         if error:
-            self._cleanup()
+            if self.step_idx >= self.max_steps:
+                self._cleanup()
+                return self._result(
+                    reward=0.0,
+                    done=True,
+                    feedback=f"\n\n[LEAN_ERROR] {error}\n[MAX_STEPS] Reached maximum {self.max_steps} steps.\n",
+                    states=states,
+                    extra={"error_type": "lean_error", "lean_error": error[:500], "steps": self.step_idx},
+                )
             return self._result(
                 reward=0.0,
-                done=True,
-                feedback=f"\n\n[LEAN_ERROR] {error}\n",
+                done=False,
+                feedback=(
+                    f"\n\n[LEAN_ERROR] {error}\n\n"
+                    "The tactic failed. The proof state is unchanged.\n"
+                    "Try a different tactic.\n"
+                ),
                 states=states,
                 extra={"error_type": "lean_error", "lean_error": error[:500], "steps": self.step_idx},
             )
