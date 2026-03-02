@@ -79,7 +79,7 @@ ROLLOUT_ARGS=(
     # miniF2F prompts are ~200-800 tokens; tactic responses are short.
     --prompt_max_len 2048
     --generate_max_len 2048
-    --stop_sequences $'```\n'
+    # stop_sequences default ("```\n") is set automatically in train_ppo_ray.py for agent mode
 
     # --- Batch sizes ---
     # Each rollout spawns a Lean REPL (~5s per step), so keep batch modest.

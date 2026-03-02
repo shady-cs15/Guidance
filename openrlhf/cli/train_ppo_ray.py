@@ -166,7 +166,7 @@ def train(args):
         max_length=args.max_len,
         temperature=args.temperature,
         top_p=args.top_p,
-        stop_sequences=args.stop_sequences,
+        stop_sequences=args.stop_sequences if args.stop_sequences else (["```\n"] if args.agent_func_path else None),
     )
 
     # training update steps
