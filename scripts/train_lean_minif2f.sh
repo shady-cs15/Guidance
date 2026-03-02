@@ -39,8 +39,8 @@ SAVE_PATH="${WORK_DIR}/exp/lean_minif2f_$(date +%Y%m%d)"
 
 # ---- Lean REPL tuning (exported so the agent process picks them up) ----
 export LEAN_REPL_TIMEOUT="${LEAN_REPL_TIMEOUT:-60}"    # seconds per REPL response
-export LEAN_THREADS="${LEAN_THREADS:-4}"                # --threads for lake env lean
-export LEAN_MEMORY="${LEAN_MEMORY:-32768}"              # --memory (MiB) for lake env lean
+export LEAN_THREADS="${LEAN_THREADS:-1}"                # --threads for lake env lean
+export LEAN_MEMORY="${LEAN_MEMORY:-8192}"              # --memory (MiB) for lake env lean
 export LEAN_MAX_STEPS="${LEAN_MAX_STEPS:-10}"          # max tactic steps per proof
 export HF_HUB_OFFLINE=0                                 # download model from hub 
 
@@ -83,8 +83,8 @@ ROLLOUT_ARGS=(
 
     # --- Batch sizes ---
     # Each rollout spawns a Lean REPL (~5s per step), so keep batch modest.
-    --rollout_batch_size 32
-    --n_samples_per_prompt 4
+    --rollout_batch_size 16
+    --n_samples_per_prompt 8
     --micro_rollout_batch_size 2
 
     --train_batch_size 64

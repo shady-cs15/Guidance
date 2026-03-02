@@ -2,6 +2,7 @@ import json
 import os
 import time
 from abc import ABC
+from collections import defaultdict
 from datetime import timedelta
 from typing import Dict, List, Tuple
 
@@ -134,6 +135,27 @@ class BasePPOTrainer(ABC):
         if "kl" in status:
             # TODO: KL controller must be FixedKLController; AdaptiveKLController is incompatible here.
             self.kl_ctl.update(status["kl"], self.args.rollout_batch_size * self.args.n_samples_per_prompt)
+
+        # Compute per-prompt reward aggregates (max@k, mean@k, min@k).
+        prompt_rewards = defaultdict(list)
+        for sample in rollout_samples:
+            label_str = sample.labels[0] if sample.labels else ""
+            try:
+                label = json.loads(label_str) if isinstance(label_str, str) else label_str
+                name = label.get("name", sample.prompts[0][:100])
+            except (json.JSONDecodeError, AttributeError, TypeError):
+                name = sample.prompts[0][:100]
+            r = sample.rewards[0].item() if sample.rewards is not None else 0.0
+            prompt_rewards[name].append(r)
+
+        if prompt_rewards:
+            k = self.args.n_samples_per_prompt
+            max_at_k = [max(rs) for rs in prompt_rewards.values()]
+            mean_at_k = [sum(rs) / len(rs) for rs in prompt_rewards.values()]
+            min_at_k = [min(rs) for rs in prompt_rewards.values()]
+            status[f"reward_max@{k}"] = sum(max_at_k) / len(max_at_k)
+            status[f"reward_mean@{k}"] = sum(mean_at_k) / len(mean_at_k)
+            status[f"reward_min@{k}"] = sum(min_at_k) / len(min_at_k)
 
         status["generated_samples"] = rollout_log_data
         return status, global_step + 1
