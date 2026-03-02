@@ -95,24 +95,62 @@ def _find_traced_repo_path(repo_url: str, commit: str) -> Path:
     )
 
 
-def _extract_tactic(action_text: str) -> str:
-    """Extract a tactic string from an LLM response.
+_MULTI_LINE_TACTIC_STARTS = frozenset({
+    "calc", "match", "suffices", "show", "by_cases", "rcases", "obtain",
+})
 
-    Supports:
-    - Content inside ``````lean ... `````` code blocks
-    - Content inside generic ````` ... ````` code blocks
-    - Raw text (stripped)
+
+def _extract_tactic(action_text: str) -> str:
+    """Extract a single tactic from an LLM response.
+
+    Strategy:
+    1. Find the last ``````lean ... `````` (or generic ````` ... `````) block,
+       skipping blocks that look like full program fragments rather than
+       tactics (starting with ``import``, ``theorem``, ``#``, etc.).
+    2. If the block contains multiple independent tactics on separate lines,
+       return only the first one — the REPL expects one tactic at a time.
+       Multi-line tactics (``calc``, ``match``, ``suffices``, …) are kept
+       intact.
+    3. Fall back to the raw stripped text when no code block is found.
     """
-    # Try lean code block
-    m = re.search(r"```lean\s*\n?(.*?)```", action_text, re.DOTALL)
-    if m:
-        return m.group(1).strip()
-    # Try generic code block
-    m = re.search(r"```\s*\n?(.*?)```", action_text, re.DOTALL)
-    if m:
-        return m.group(1).strip()
-    # Fall back to full text, stripped
-    return action_text.strip()
+    NON_TACTIC_PREFIXES = ("import ", "theorem ", "lemma ", "#", "open ", "set_option ", "##")
+
+    # Collect all code blocks (lean-tagged first, then generic).
+    blocks = list(re.finditer(r"```lean\s*\n?(.*?)```", action_text, re.DOTALL))
+    if not blocks:
+        blocks = list(re.finditer(r"```\s*\n?(.*?)```", action_text, re.DOTALL))
+
+    # Walk backwards through blocks and pick the last one that looks like a tactic.
+    for m in reversed(blocks):
+        content = m.group(1).strip()
+        if not content:
+            continue
+        if content.startswith(NON_TACTIC_PREFIXES):
+            continue
+        return _first_tactic(content)
+
+    # No usable code block — try the raw text.
+    raw = action_text.strip()
+    if raw:
+        return _first_tactic(raw)
+    return ""
+
+
+def _first_tactic(block: str) -> str:
+    """Return only the first independent tactic from a multi-line block.
+
+    Known multi-line tactic starters (``calc``, ``match``, …) are returned
+    in full because they span multiple lines by design.
+    """
+    lines = [l for l in block.splitlines() if l.strip()]
+    if not lines:
+        return ""
+
+    first_word = lines[0].split()[0].rstrip(":") if lines[0].split() else ""
+    if first_word in _MULTI_LINE_TACTIC_STARTS:
+        return block
+
+    return lines[0].strip()
 
 
 def _build_lean_file(header: str, formal_statement: str) -> str:

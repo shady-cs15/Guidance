@@ -173,7 +173,7 @@ class BasePPOTrainer(ABC):
 
             # Keep only the best (highest reward) sample per prompt.
             if name not in prompt_best or reward > prompt_best[name][2]:
-                prompt_best[name] = (prompt[:500], trajectory, reward)
+                prompt_best[name] = (prompt, trajectory, reward)
 
         return [
             {"name": name, "prompt": p, "trajectory": traj, "reward": r}

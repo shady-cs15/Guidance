@@ -166,6 +166,7 @@ def train(args):
         max_length=args.max_len,
         temperature=args.temperature,
         top_p=args.top_p,
+        stop_sequences=args.stop_sequences,
     )
 
     # training update steps
@@ -358,6 +359,7 @@ if __name__ == "__main__":
     parser.add_argument("--max_epochs", type=int, default=1)
     parser.add_argument("--prompt_max_len", type=int, default=1024, help="Max tokens for each prompt")
     parser.add_argument("--generate_max_len", type=int, default=1024, help="Max tokens to generate in PPO")
+    parser.add_argument("--stop_sequences", type=str, nargs="*", default=None, help="Stop sequences for vLLM generation")
     parser.add_argument("--max_len", type=int, default=None, help="deprecated max_len")
     parser.add_argument("--max_samples", type=int, default=1e8, help="Max number of samples")
     parser.add_argument("--max_norm", type=float, default=1.0, help="Gradient clipping")

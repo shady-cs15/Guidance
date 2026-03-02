@@ -38,7 +38,7 @@ SAVE_PATH="${WORK_DIR}/exp/lean_minif2f_$(date +%Y%m%d)"
 
 
 # ---- Lean REPL tuning (exported so the agent process picks them up) ----
-export LEAN_REPL_TIMEOUT="${LEAN_REPL_TIMEOUT:-300}"   # seconds per REPL response
+export LEAN_REPL_TIMEOUT="${LEAN_REPL_TIMEOUT:-60}"    # seconds per REPL response
 export LEAN_THREADS="${LEAN_THREADS:-4}"                # --threads for lake env lean
 export LEAN_MEMORY="${LEAN_MEMORY:-32768}"              # --memory (MiB) for lake env lean
 export LEAN_MAX_STEPS="${LEAN_MAX_STEPS:-10}"          # max tactic steps per proof
@@ -79,11 +79,12 @@ ROLLOUT_ARGS=(
     # miniF2F prompts are ~200-800 tokens; tactic responses are short.
     --prompt_max_len 2048
     --generate_max_len 2048
+    --stop_sequences $'```\n'
 
     # --- Batch sizes ---
     # Each rollout spawns a Lean REPL (~5s per step), so keep batch modest.
     --rollout_batch_size 32
-    --n_samples_per_prompt 16
+    --n_samples_per_prompt 4
     --micro_rollout_batch_size 2
 
     --train_batch_size 64
@@ -91,8 +92,8 @@ ROLLOUT_ARGS=(
 
     # --- Dataset / epoch control ---
     --max_samples 1000
-    --max_epochs 25
-    --num_episodes 5
+    --max_epochs 1
+    --num_episodes 25
 
     # --- Dynamic filtering: drop rollouts with reward outside [0, 1] ---
     # --dynamic_filtering

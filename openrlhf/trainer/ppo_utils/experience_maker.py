@@ -362,6 +362,7 @@ class SamplesGenerator:
 
     def _dispatch_prompts_to_vllm(self, prompts: List[str], labels: List[str], **generate_kwargs) -> List:
         """Send prompts to rollout executors and return Ray object refs."""
+        stop_seqs = generate_kwargs.get("stop_sequences", None)
         sampling_params = SamplingParams(
             temperature=generate_kwargs.get("temperature", 1.0),
             top_p=generate_kwargs.get("top_p", 1.0),
@@ -370,6 +371,8 @@ class SamplesGenerator:
             min_tokens=generate_kwargs.get("min_new_tokens", 1),
             skip_special_tokens=generate_kwargs.get("skip_special_tokens", False),
             logprobs=1 if self.args.enable_vllm_is_correction else None,
+            stop=stop_seqs,
+            include_stop_str_in_output=bool(stop_seqs),
         )
         truncate_length = generate_kwargs.get("prompt_max_len", 1024) + generate_kwargs.get("max_new_tokens", 1024)
 

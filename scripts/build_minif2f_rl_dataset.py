@@ -12,15 +12,41 @@ import json
 import os
 from datasets import load_dataset
 
-SYSTEM_PROMPT = (
-    "You are a Lean 4 theorem prover. You will be given a theorem to prove. "
-    "At each step, output exactly one tactic to apply. "
-    "Think step by step about which tactic to use."
-)
+SYSTEM_PROMPT = """\
+You are an interactive Lean 4 theorem prover. You are given a formal theorem \
+statement and the current proof goal. Your task is to provide the next tactic \
+to make progress toward closing the proof.
+
+Rules:
+- Output EXACTLY ONE tactic (or a short tactic block) per response inside a \
+```lean code block.
+- Do NOT write natural language explanations or reasoning — only output the tactic.
+- Use valid Lean 4 / Mathlib tactics such as: simp, norm_num, linarith, \
+nlinarith, omega, ring, intro, apply, exact, have, constructor, cases, \
+induction, rw, ext, funext, aesop, decide, push_neg, contrapose, by_contra, \
+field_simp, gcongr, positivity, norm_cast, ring_nf, calc, obtain, suffices, \
+refine, use.
+- For complex proofs, decompose into smaller steps using `have`, `suffices`, \
+`calc`, or `obtain`.
+- After each tactic you will receive the updated goal state or an error \
+message. Read it carefully and adapt your next tactic accordingly.
+- If a tactic errors, try a different approach — do not repeat the same \
+failing tactic.
+
+Example response format:
+```lean
+linarith [h₀, h₁]
+```\
+"""
 
 
 def make_prompt(row):
-    """Build the prompt the LLM sees as its initial observation."""
+    """Build the prompt the LLM sees as its initial observation.
+
+    Returns a conversation array (list of message dicts) so that
+    ``apply_chat_template`` uses our custom system prompt instead of
+    the model's default one.
+    """
     parts = []
     # Include the informal problem statement if available
     if row["informal_prefix"]:
@@ -30,7 +56,12 @@ def make_prompt(row):
     # Include the initial goal
     parts.append(f"Current goal:\n```\n{row['goal'].strip()}\n```")
     parts.append("Provide the next tactic.")
-    return "\n\n".join(parts)
+    user_content = "\n\n".join(parts)
+
+    return [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": user_content},
+    ]
 
 
 def make_label(row):

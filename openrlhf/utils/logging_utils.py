@@ -98,25 +98,16 @@ class WandbLogger:
                 if name not in self.rollout_tracking:
                     self.rollout_tracking[name] = {"prompt": sample["prompt"], "steps": {}}
                 self.rollout_tracking[name]["steps"][global_step] = {
-                    "trajectory": sample["trajectory"][:5000],  # truncate for wandb cell limits
+                    "trajectory": sample["trajectory"],  # truncate for wandb cell limits
                     "reward": sample["reward"],
                 }
 
-            # Build rollout table: 3 fixed columns — name, prompt, solution
-            # The "solution" cell accumulates the best trajectory at every
-            # global training step so progress is visible over time.
-            columns = ["name", "prompt", "solution"]
+            columns = ["name", "global_step", "reward", "prompt", "trajectory"]
             rows = []
             for name, entry in self.rollout_tracking.items():
-                step_texts = []
                 for s in sorted(entry["steps"]):
                     d = entry["steps"][s]
-                    step_texts.append(
-                        f"=== global step {s} [reward={d['reward']:.2f}] ===\n"
-                        f"{d['trajectory']}"
-                    )
-                solution = "\n\n".join(step_texts)
-                rows.append([name, entry["prompt"], solution])
+                    rows.append([name, s, d["reward"], entry["prompt"], d["trajectory"]])
 
             table = self.handle.Table(columns=columns, data=rows)
             self.handle.log({"rollouts/train_rollouts": table})
