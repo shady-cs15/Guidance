@@ -33,6 +33,10 @@ def train(args):
                           + os.environ.get("PYTHONPATH", ""),
             "PATH": "/root/Guidance/.venv/bin:/root/.elan/bin:"
                     + os.environ.get("PATH", ""),
+            "LEAN_MAX_STEPS": os.environ.get("LEAN_MAX_STEPS", "10"),
+            "LEAN_REPL_TIMEOUT": os.environ.get("LEAN_REPL_TIMEOUT", "60"),
+            "LEAN_THREADS": os.environ.get("LEAN_THREADS", "4"),
+            "LEAN_MEMORY": os.environ.get("LEAN_MEMORY", "32768"),
         }})
 
     # configure strategy
