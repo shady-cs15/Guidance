@@ -36,7 +36,7 @@ VAL_DATA="${WORK_DIR}/data/minif2f_few_shot.jsonl"
 AGENT_FUNC_PATH="${WORK_DIR}/examples/python/agent_func_lean_minif2f.py"
 
 # ---- Output ----
-SAVE_PATH="${WORK_DIR}/exp/lean_minif2f_$(date +%Y%m%d)"
+SAVE_PATH="/fsx/guidance/lean_minif2f_$(date +%Y%m%d)"
 
 
 # ---- Lean REPL tuning (exported so the agent process picks them up) ----
@@ -95,7 +95,7 @@ ROLLOUT_ARGS=(
     # --- Dataset / epoch control ---
     --max_samples 1000
     --max_epochs 1
-    --num_episodes 25
+    --num_episodes 10
 
     # --- Dynamic filtering: drop rollouts with reward outside [0, 1] ---
     # --dynamic_filtering
