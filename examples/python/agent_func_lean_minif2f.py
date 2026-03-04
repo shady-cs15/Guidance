@@ -111,7 +111,8 @@ def _extract_tactic(action_text: str) -> str:
        return only the first one — the REPL expects one tactic at a time.
        Multi-line tactics (``calc``, ``match``, ``suffices``, …) are kept
        intact.
-    3. Fall back to the raw stripped text when no code block is found.
+    3. If no valid code block is found, return "" to trigger [PARSE_ERROR].
+       No raw-text fallback — the model is expected to use code blocks.
     """
     NON_TACTIC_PREFIXES = ("import ", "theorem ", "lemma ", "#", "open ", "set_option ", "##")
 
@@ -129,10 +130,7 @@ def _extract_tactic(action_text: str) -> str:
             continue
         return _first_tactic(content)
 
-    # No usable code block — try the raw text.
-    raw = action_text.strip()
-    if raw:
-        return _first_tactic(raw)
+    # No usable code block — return empty to trigger [PARSE_ERROR].
     return ""
 
 

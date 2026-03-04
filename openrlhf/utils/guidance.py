@@ -15,20 +15,16 @@ from openrlhf.utils.logging_utils import init_logger
 logger = init_logger(__name__)
 
 _DEFAULT_PROMPT_TEMPLATE = """\
-You are reflecting on your proof attempt in Lean 4.
+You are reflecting on a Lean 4 proof attempt.
 
-Here is your trajectory so far:
+Trajectory so far:
 {trajectory_text}
 
-The latest feedback from the environment:
+Latest feedback:
 {latest_feedback}
 
-Reflect in first person on what went wrong and what you should try next.
-Be concise and specific. Write as "I should..." / "I made the mistake of..."
-
-IMPORTANT: Do NOT include any code blocks or tactic suggestions in your response. \
-Only provide strategic, conceptual advice about the proof approach. \
-Do NOT use triple backticks or write any Lean code.\
+If the proof looks on track and there is no obvious mistake, reply with an empty string (nothing).
+Only provide guidance when something went wrong. In that case: one short sentence in first person (e.g. "I should..."). No code blocks, no tactic names.\
 """
 
 
@@ -45,7 +41,7 @@ class GuidanceClient:
     ):
         self.model = model or os.environ.get("GUIDANCE_MODEL", "qwen/qwen3.5-27b")
         self.api_key = api_key or os.environ.get("OPENROUTER_API_KEY", "")
-        self.max_tokens = max_tokens or int(os.environ.get("GUIDANCE_MAX_TOKENS", "512"))
+        self.max_tokens = max_tokens or int(os.environ.get("GUIDANCE_MAX_TOKENS", "256"))
         self.prompt_template = prompt_template or os.environ.get(
             "GUIDANCE_PROMPT_TEMPLATE", _DEFAULT_PROMPT_TEMPLATE
         )
@@ -80,6 +76,7 @@ class GuidanceClient:
             logger.warning("Guidance API call failed (skipping): %s", exc)
             return ""
 
+        guidance_text = (guidance_text or "").strip()
         if not guidance_text:
             return ""
 
