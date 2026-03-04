@@ -165,6 +165,7 @@ class LLMRayActor:
         max_length: int,
         hf_tokenizer,
         num_samples: int = 1,
+        is_eval: bool = False,
     ):
         """Generate N samples for a single prompt."""
         tasks = [
@@ -175,6 +176,7 @@ class LLMRayActor:
                 max_length=max_length,
                 hf_tokenizer=hf_tokenizer,
                 llm_engine=self,
+                is_eval=is_eval,
             )
             for _ in range(num_samples)
         ]

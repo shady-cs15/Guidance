@@ -397,6 +397,7 @@ class PPOTrainer(BasePPOTrainer):
                     eval_generate_kwargs = self.generate_kwargs.copy()
                     eval_generate_kwargs["temperature"] = self.args.eval_temperature
                     eval_generate_kwargs["n_samples_per_prompt"] = self.args.eval_n_samples_per_prompt
+                    eval_generate_kwargs["is_eval"] = True
                     self.evaluate(global_step, **eval_generate_kwargs)
 
                 pbar.update(prompts_consumed)

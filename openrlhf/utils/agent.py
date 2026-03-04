@@ -11,7 +11,7 @@ logger = init_logger(__name__)
 
 class AgentExecutorBase(ABC):
     @abstractmethod
-    async def execute(self, prompt, label, sampling_params, max_length: int, hf_tokenizer, llm_engine):
+    async def execute(self, prompt, label, sampling_params, max_length: int, hf_tokenizer, llm_engine, **kwargs):
         raise NotImplementedError("AgentExecutorBase.execute is not implemented")
 
 
@@ -33,19 +33,19 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
         assert issubclass(agent_instance_cls, AgentInstanceBase), "AgentInstance must inherit from AgentInstanceBase"
         self.agent_instance_cls = agent_instance_cls
 
-    async def execute(self, prompt, label, sampling_params, max_length: int, hf_tokenizer, llm_engine):
+    async def execute(self, prompt, label, sampling_params, max_length: int, hf_tokenizer, llm_engine, **kwargs):
         agent_instance = self.agent_instance_cls()
         try:
-            return await self._execute_inner(agent_instance, prompt, label, sampling_params, max_length, hf_tokenizer, llm_engine)
+            return await self._execute_inner(agent_instance, prompt, label, sampling_params, max_length, hf_tokenizer, llm_engine, **kwargs)
         finally:
             if hasattr(agent_instance, "_cleanup"):
                 agent_instance._cleanup()
 
-    async def _post_step(self, trajectory_steps, environment_feedback_text, done, hf_tokenizer):
+    async def _post_step(self, trajectory_steps, environment_feedback_text, done, hf_tokenizer, **kwargs):
         """Hook called after each environment step. Returns text to append (masked out like env feedback)."""
         return ""
 
-    async def _execute_inner(self, agent_instance, prompt, label, sampling_params, max_length: int, hf_tokenizer, llm_engine):
+    async def _execute_inner(self, agent_instance, prompt, label, sampling_params, max_length: int, hf_tokenizer, llm_engine, **kwargs):
         initial_states = {"observation": prompt, "label": label}
         reset_result = await agent_instance.reset(initial_states)
         observation_text = reset_result["observation"]
@@ -122,7 +122,7 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
                     rollout_log_probs.append(logprob[action_tokens[i]].logprob)
                 rollout_log_probs.extend([0.0] * (len(current_obs_tokens) - len(rollout_log_probs)))
 
-            post_step_text = await self._post_step(trajectory_steps, environment_feedback_text, done, hf_tokenizer)
+            post_step_text = await self._post_step(trajectory_steps, environment_feedback_text, done, hf_tokenizer, **kwargs)
             if post_step_text:
                 trajectory_steps[-1]["guidance"] = post_step_text
                 post_step_tokens = hf_tokenizer(
@@ -175,9 +175,10 @@ class GuidedMultiTurnAgentExecutor(MultiTurnAgentExecutor):
 
         self.guidance_client = guidance_client or GuidanceClient()
 
-    async def execute(self, prompt, label, sampling_params, max_length, hf_tokenizer, llm_engine):
-        prompt = self._inject_guidance_rule(prompt)
-        return await super().execute(prompt, label, sampling_params, max_length, hf_tokenizer, llm_engine)
+    async def execute(self, prompt, label, sampling_params, max_length, hf_tokenizer, llm_engine, **kwargs):
+        if not kwargs.get("is_eval", False):
+            prompt = self._inject_guidance_rule(prompt)
+        return await super().execute(prompt, label, sampling_params, max_length, hf_tokenizer, llm_engine, **kwargs)
 
     @classmethod
     def _inject_guidance_rule(cls, prompt: str) -> str:
@@ -191,8 +192,8 @@ class GuidedMultiTurnAgentExecutor(MultiTurnAgentExecutor):
             line_end = len(prompt)
         return prompt[:line_end] + "\n" + cls._GUIDANCE_RULE + prompt[line_end:]
 
-    async def _post_step(self, trajectory_steps, environment_feedback_text, done, hf_tokenizer):
-        if done:
+    async def _post_step(self, trajectory_steps, environment_feedback_text, done, hf_tokenizer, **kwargs):
+        if done or kwargs.get("is_eval", False):
             return ""
         trajectory_text = "\n\n".join(
             f"[Step {ts['step']}]\n{ts['action']}\n[Environment Feedback]\n{ts['feedback']}"
@@ -219,7 +220,7 @@ class SingleTurnAgentExecutor(AgentExecutorBase):
             spec.loader.exec_module(reward_module)
             self.reward_func = reward_module.reward_func
 
-    async def execute(self, prompt, label, sampling_params, max_length: int, hf_tokenizer, llm_engine):
+    async def execute(self, prompt, label, sampling_params, max_length: int, hf_tokenizer, llm_engine, **kwargs):
         # Tokenize the initial observation.
         prompt_token_ids = hf_tokenizer(prompt, add_special_tokens=False, return_tensors="pt")["input_ids"][0].tolist()
 

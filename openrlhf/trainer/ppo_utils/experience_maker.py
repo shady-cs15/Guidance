@@ -399,6 +399,7 @@ class SamplesGenerator:
                 max_length=truncate_length,
                 hf_tokenizer=self.tokenizer,
                 num_samples=self.args.n_samples_per_prompt,
+                is_eval=generate_kwargs.get("is_eval", False),
             )
             refs.append(ref)
 
