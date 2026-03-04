@@ -176,9 +176,22 @@ class GuidedMultiTurnAgentExecutor(MultiTurnAgentExecutor):
         self.guidance_client = guidance_client or GuidanceClient()
 
     async def execute(self, prompt, label, sampling_params, max_length, hf_tokenizer, llm_engine, **kwargs):
+        self._guidance_requested = 0
+        self._guidance_failed = 0
         if not kwargs.get("is_eval", False):
             prompt = self._inject_guidance_rule(prompt)
-        return await super().execute(prompt, label, sampling_params, max_length, hf_tokenizer, llm_engine, **kwargs)
+        result = await super().execute(prompt, label, sampling_params, max_length, hf_tokenizer, llm_engine, **kwargs)
+        result["extra_logs"] = {
+            **result.get("extra_logs", {}),
+            "guidance_requested": self._guidance_requested,
+            "guidance_failed": self._guidance_failed,
+            "guidance_success_rate": (
+                (self._guidance_requested - self._guidance_failed) / self._guidance_requested
+                if self._guidance_requested > 0
+                else 1.0
+            ),
+        }
+        return result
 
     @classmethod
     def _inject_guidance_rule(cls, prompt: str) -> str:
@@ -195,11 +208,15 @@ class GuidedMultiTurnAgentExecutor(MultiTurnAgentExecutor):
     async def _post_step(self, trajectory_steps, environment_feedback_text, done, hf_tokenizer, **kwargs):
         if done or kwargs.get("is_eval", False):
             return ""
+        self._guidance_requested += 1
         trajectory_text = "\n\n".join(
             f"[Step {ts['step']}]\n{ts['action']}\n[Environment Feedback]\n{ts['feedback']}"
             for ts in trajectory_steps
         )
-        return await self.guidance_client.get_guidance(trajectory_text, environment_feedback_text)
+        result = await self.guidance_client.get_guidance(trajectory_text, environment_feedback_text)
+        if not result:
+            self._guidance_failed += 1
+        return result
 
 
 class SingleTurnAgentExecutor(AgentExecutorBase):

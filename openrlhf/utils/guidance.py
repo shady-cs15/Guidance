@@ -103,8 +103,12 @@ class GuidanceClient:
             try:
                 async with aiohttp.ClientSession(timeout=timeout) as session:
                     async with session.post(url, json=payload, headers=headers) as resp:
-                        resp.raise_for_status()
                         data = await resp.json()
+                        if "choices" not in data:
+                            error_detail = data.get("error", {})
+                            if isinstance(error_detail, dict):
+                                error_detail = error_detail.get("message", str(data)[:300])
+                            raise RuntimeError(f"OpenRouter error: {error_detail}")
                         return data["choices"][0]["message"]["content"]
             except Exception as exc:
                 logger.warning("Guidance API attempt %d/%d failed: %s", attempt, retries, exc)
