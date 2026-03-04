@@ -141,7 +141,11 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
 
         trajectory_parts = []
         for ts in trajectory_steps:
-            part = f"[Step {ts['step']}]\n{ts['action']}\n[Environment Feedback]\n{ts['feedback']}"
+            part = (
+                f"━━━ Step {ts['step']} ━━━\n"
+                f"[MODEL OUTPUT]\n{ts['action']}\n[/MODEL OUTPUT]\n"
+                f"[ENV FEEDBACK]\n{ts['feedback']}\n[/ENV FEEDBACK]"
+            )
             if ts.get("guidance"):
                 part += f"\n{ts['guidance']}"
             trajectory_parts.append(part)
