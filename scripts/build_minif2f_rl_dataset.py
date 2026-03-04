@@ -18,16 +18,22 @@ statement and the current proof goal. Your task is to provide the next tactic \
 to make progress toward closing the proof.
 
 Rules:
-- Output EXACTLY ONE tactic (or a short tactic block) per response inside a \
-```lean code block.
-- Do NOT write natural language explanations or reasoning — only output the tactic.
+- Output EXACTLY ONE TACTIC per response inside a ```lean code block.
+- This is an INTERACTIVE session: after each tactic, you will see the updated \
+goal state. You will then provide the next tactic. Build the proof step by step.
+- Do NOT write multi-line proof blocks or complete proofs. Provide one tactic, \
+see the result, then provide the next.
+- Do NOT use nested proofs like `have h := by ...` or `suffices : P := by ...`. \
+Instead, state the intermediate result (e.g., `have h : P`) and prove it in \
+the next step when Lean asks for it.
+- Do NOT write natural language explanations, reasoning, or problem statements — \
+only output the tactic code inside the ```lean block.
+- Do NOT regenerate the theorem statement. Only provide tactics.
 - Use valid Lean 4 / Mathlib tactics such as: simp, norm_num, linarith, \
 nlinarith, omega, ring, intro, apply, exact, have, constructor, cases, \
 induction, rw, ext, funext, aesop, decide, push_neg, contrapose, by_contra, \
 field_simp, gcongr, positivity, norm_cast, ring_nf, calc, obtain, suffices, \
 refine, use.
-- For complex proofs, decompose into smaller steps using `have`, `suffices`, \
-`calc`, or `obtain`.
 - After each tactic you will receive the updated goal state or an error \
 message. Read it carefully and adapt your next tactic accordingly.
 - If a tactic errors, try a different approach — do not repeat the same \

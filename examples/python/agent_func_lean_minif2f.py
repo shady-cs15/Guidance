@@ -97,6 +97,7 @@ def _find_traced_repo_path(repo_url: str, commit: str) -> Path:
 
 _MULTI_LINE_TACTIC_STARTS = frozenset({
     "calc", "match", "suffices", "show", "by_cases", "rcases", "obtain",
+    "conv", "induction", "cases",
 })
 
 
@@ -138,17 +139,76 @@ def _first_tactic(block: str) -> str:
     """Return only the first independent tactic from a multi-line block.
 
     Known multi-line tactic starters (``calc``, ``match``, …) are returned
-    in full because they span multiple lines by design.
+    in full because they span multiple lines by design. Also handles indented
+    continuations, unclosed delimiters, and case branches.
     """
     lines = [l for l in block.splitlines() if l.strip()]
     if not lines:
         return ""
 
     first_word = lines[0].split()[0].rstrip(":") if lines[0].split() else ""
-    if first_word in _MULTI_LINE_TACTIC_STARTS:
-        return block
 
-    return lines[0].strip()
+    # Known multi-line tactics - but still respect indentation boundaries
+    if first_word in _MULTI_LINE_TACTIC_STARTS:
+        return _extract_with_indentation(lines)
+
+    # Check if first line ends with patterns that indicate continuation
+    first_line = lines[0].rstrip()
+    continuation_endings = (',', 'with', 'where', 'do', '=>', 'by')
+    if any(first_line.endswith(ending) for ending in continuation_endings):
+        return _extract_with_indentation(lines)
+
+    # Check for bullet points or case branches in subsequent lines
+    if len(lines) > 1:
+        second_line_stripped = lines[1].lstrip()
+        if second_line_stripped.startswith(('|', '·', '•', 'case')):
+            return _extract_with_indentation(lines)
+
+    # Check for unclosed brackets/parens
+    if _has_unclosed_delimiters(first_line):
+        return _extract_with_indentation(lines)
+
+    # Default: single line
+    return first_line.strip()
+
+
+def _extract_with_indentation(lines):
+    """Extract lines that are part of the same tactical block based on indentation."""
+    if not lines:
+        return ""
+
+    result = [lines[0].rstrip()]
+    base_indent = len(lines[0]) - len(lines[0].lstrip())
+
+    for line in lines[1:]:
+        stripped = line.lstrip()
+        if not stripped:
+            continue
+        current_indent = len(line) - len(stripped)
+        # Include if: indented more, starts with bullet/case, or continues previous line
+        if (current_indent > base_indent or
+            stripped.startswith(('|', '·', '•', 'case', '_')) or
+            result[-1].endswith(',')):
+            result.append(line.rstrip())
+        else:
+            # Found a non-indented line - stop here
+            break
+
+    return '\n'.join(result)
+
+
+def _has_unclosed_delimiters(line):
+    """Check if line has unclosed brackets/parens."""
+    stack = []
+    pairs = {'(': ')', '[': ']', '{': '}'}
+    for char in line:
+        if char in pairs:
+            stack.append(pairs[char])
+        elif char in pairs.values():
+            if not stack or stack[-1] != char:
+                return True  # Mismatched
+            stack.pop()
+    return len(stack) > 0  # Unclosed
 
 
 def _build_lean_file(header: str, formal_statement: str) -> str:

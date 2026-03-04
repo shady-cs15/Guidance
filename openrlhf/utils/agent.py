@@ -170,7 +170,8 @@ class GuidedMultiTurnAgentExecutor(MultiTurnAgentExecutor):
     _GUIDANCE_RULE = (
         "- You may receive [GUIDANCE] blocks containing reflections on your proof strategy. "
         "Use the strategic advice to inform your next tactic choice, but always respond "
-        "with ONLY a single tactic inside a ```lean code block — never copy text from the guidance verbatim."
+        "with ONLY a single tactic inside a ```lean code block. Never copy text from the "
+        "guidance verbatim, and never regenerate the theorem statement."
     )
 
     def __init__(self, agent_instance_cls, guidance_client=None):
