@@ -34,20 +34,26 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
         self.agent_instance_cls = agent_instance_cls
 
     async def execute(self, prompt, label, sampling_params, max_length: int, hf_tokenizer, llm_engine):
-        # Treat each AgentInstance as an isolated environment; bind every prompt to its own independent instance
         agent_instance = self.agent_instance_cls()
+        try:
+            return await self._execute_inner(agent_instance, prompt, label, sampling_params, max_length, hf_tokenizer, llm_engine)
+        finally:
+            if hasattr(agent_instance, "_cleanup"):
+                agent_instance._cleanup()
 
-        # Initialize with reset function
+    async def _post_step(self, trajectory_steps, environment_feedback_text, done, hf_tokenizer):
+        """Hook called after each environment step. Returns text to append (masked out like env feedback)."""
+        return ""
+
+    async def _execute_inner(self, agent_instance, prompt, label, sampling_params, max_length: int, hf_tokenizer, llm_engine):
         initial_states = {"observation": prompt, "label": label}
         reset_result = await agent_instance.reset(initial_states)
         observation_text = reset_result["observation"]
 
-        # Tokenize the initial observation
         current_obs_tokens = hf_tokenizer(observation_text, add_special_tokens=False, return_tensors="pt")[
             "input_ids"
         ][0].tolist()
 
-        # Truncate initial observation if it's too long to leave room for generation
         min_generation_tokens = sampling_params.max_tokens if hasattr(sampling_params, "max_tokens") else 1
         max_initial_length = max_length - min_generation_tokens
         if len(current_obs_tokens) > max_initial_length:
@@ -56,10 +62,8 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
                 f"Truncating to fit within max_length ({max_length})."
             )
             current_obs_tokens = current_obs_tokens[-max_initial_length:]
-            # Also update observation_text to match truncated tokens
             observation_text = hf_tokenizer.decode(current_obs_tokens, skip_special_tokens=False)
 
-        # Initialize tracking variables
         action_ranges = []
         trajectory_steps = []
         total_reward = 0
@@ -71,25 +75,19 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
         else:
             rollout_log_probs = None
 
-        # Execute multiple steps of interaction
         while True:
-            # Next sampling budget
             sampling_params.max_tokens = max_length - len(current_obs_tokens)
-            # No budget to generate, break
             if sampling_params.max_tokens <= 0:
                 break
 
-            # Generate response asynchronously (input and output are token ids)
             request_output = await llm_engine.generate(current_obs_tokens, deepcopy(sampling_params))
             action_tokens = request_output.outputs[0].token_ids
             action_text = request_output.outputs[0].text
 
-            # Record action range in token space
             action_start = len(current_obs_tokens)
             action_end = action_start + len(action_tokens)
             action_ranges.append((action_start, action_end))
 
-            # Call step function to get environment feedback
             states = {
                 "observation_text": observation_text,
                 "action_text": action_text,
@@ -104,14 +102,12 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
             done = step_result["done"]
             extra_logs = step_result.get("extra_logs", {})
 
-            # Record this step for trajectory logging
             trajectory_steps.append({
                 "step": len(trajectory_steps) + 1,
                 "action": action_text,
                 "feedback": environment_feedback_text,
             })
 
-            # Concatenate observation, action, and environment_feedback, then tokenize
             observation_text = observation_text + action_text + environment_feedback_text
             current_obs_tokens = (
                 current_obs_tokens
@@ -121,22 +117,27 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
                 ].tolist()
             )
 
-            # Calculate rollout log probs
             if sampling_params.logprobs is not None:
-                # action tokens logprobs
                 for i, logprob in enumerate(request_output.outputs[0].logprobs):
                     rollout_log_probs.append(logprob[action_tokens[i]].logprob)
-                # dummy logprobs for the env feedback tokens
                 rollout_log_probs.extend([0.0] * (len(current_obs_tokens) - len(rollout_log_probs)))
 
-            # Get sampling params from the environment step
+            post_step_text = await self._post_step(trajectory_steps, environment_feedback_text, done, hf_tokenizer)
+            if post_step_text:
+                post_step_tokens = hf_tokenizer(
+                    post_step_text, add_special_tokens=False, return_tensors="pt"
+                )["input_ids"][0].tolist()
+                observation_text += post_step_text
+                current_obs_tokens += post_step_tokens
+                if rollout_log_probs is not None:
+                    rollout_log_probs.extend([0.0] * len(post_step_tokens))
+
             if step_result.get("sampling_params", None):
                 sampling_params = step_result["sampling_params"]
 
             if done:
                 break
 
-        # Format trajectory for logging
         trajectory_parts = []
         for ts in trajectory_steps:
             trajectory_parts.append(
@@ -145,8 +146,7 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
             )
         trajectory_text = "\n\n".join(trajectory_parts)
 
-        # Store the final response when agent execution is complete
-        final_response = {
+        return {
             "prompt": prompt,
             "label": label,
             "reward": total_reward,
@@ -157,7 +157,25 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
             "extra_logs": extra_logs,
             "trajectory_text": trajectory_text,
         }
-        return final_response
+
+
+class GuidedMultiTurnAgentExecutor(MultiTurnAgentExecutor):
+    """Multi-turn executor that injects external-model guidance after each env step."""
+
+    def __init__(self, agent_instance_cls, guidance_client=None):
+        super().__init__(agent_instance_cls)
+        from openrlhf.utils.guidance import GuidanceClient
+
+        self.guidance_client = guidance_client or GuidanceClient()
+
+    async def _post_step(self, trajectory_steps, environment_feedback_text, done, hf_tokenizer):
+        if done:
+            return ""
+        trajectory_text = "\n\n".join(
+            f"[Step {ts['step']}]\n{ts['action']}\n[Environment Feedback]\n{ts['feedback']}"
+            for ts in trajectory_steps
+        )
+        return await self.guidance_client.get_guidance(trajectory_text, environment_feedback_text)
 
 
 class SingleTurnAgentExecutor(AgentExecutorBase):

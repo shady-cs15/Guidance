@@ -81,34 +81,16 @@ class WandbLogger:
         wandb.define_metric("eval/*", step_metric="eval/epoch", step_sync=True)
         self.handle = wandb
 
-        # Rollout table: tracks best proof attempt per prompt across training steps.
-        # Structure: { name: { "prompt": str, "steps": { global_step: {"response": str, "reward": float} } } }
-        self.rollout_tracking: Dict[str, Any] = {}
-
     def log_train(self, global_step: int, logs_dict: Dict[str, Any]) -> None:
         logs_dict = dict(logs_dict)
 
         generated_samples = logs_dict.pop("generated_samples", None)
         if generated_samples and isinstance(generated_samples, list):
-            # Update rollout tracking with new samples.
-            # ``trajectory`` now contains the step-by-step agent interaction
-            # (action + environment feedback for every tactic step).
-            for sample in generated_samples:
-                name = sample["name"]
-                if name not in self.rollout_tracking:
-                    self.rollout_tracking[name] = {"prompt": sample["prompt"], "steps": {}}
-                self.rollout_tracking[name]["steps"][global_step] = {
-                    "trajectory": sample["trajectory"],  # truncate for wandb cell limits
-                    "reward": sample["reward"],
-                }
-
             columns = ["name", "global_step", "reward", "prompt", "trajectory"]
-            rows = []
-            for name, entry in self.rollout_tracking.items():
-                for s in sorted(entry["steps"]):
-                    d = entry["steps"][s]
-                    rows.append([name, s, d["reward"], entry["prompt"], d["trajectory"]])
-
+            rows = [
+                [s["name"], global_step, s["reward"], s["prompt"], s["trajectory"]]
+                for s in generated_samples
+            ]
             table = self.handle.Table(columns=columns, data=rows)
             self.handle.log({"rollouts/train_rollouts": table})
 
