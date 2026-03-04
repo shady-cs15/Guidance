@@ -124,6 +124,7 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
 
             post_step_text = await self._post_step(trajectory_steps, environment_feedback_text, done, hf_tokenizer)
             if post_step_text:
+                trajectory_steps[-1]["guidance"] = post_step_text
                 post_step_tokens = hf_tokenizer(
                     post_step_text, add_special_tokens=False, return_tensors="pt"
                 )["input_ids"][0].tolist()
@@ -140,10 +141,10 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
 
         trajectory_parts = []
         for ts in trajectory_steps:
-            trajectory_parts.append(
-                f"[Step {ts['step']}]\n{ts['action']}\n"
-                f"[Environment Feedback]\n{ts['feedback']}"
-            )
+            part = f"[Step {ts['step']}]\n{ts['action']}\n[Environment Feedback]\n{ts['feedback']}"
+            if ts.get("guidance"):
+                part += f"\n{ts['guidance']}"
+            trajectory_parts.append(part)
         trajectory_text = "\n\n".join(trajectory_parts)
 
         return {
@@ -162,11 +163,33 @@ class MultiTurnAgentExecutor(AgentExecutorBase):
 class GuidedMultiTurnAgentExecutor(MultiTurnAgentExecutor):
     """Multi-turn executor that injects external-model guidance after each env step."""
 
+    _GUIDANCE_RULE = (
+        "- You may receive [GUIDANCE] blocks containing reflections on your proof strategy. "
+        "Use the strategic advice to inform your next tactic choice, but always respond "
+        "with ONLY a single tactic inside a ```lean code block — never copy text from the guidance verbatim."
+    )
+
     def __init__(self, agent_instance_cls, guidance_client=None):
         super().__init__(agent_instance_cls)
         from openrlhf.utils.guidance import GuidanceClient
 
         self.guidance_client = guidance_client or GuidanceClient()
+
+    async def execute(self, prompt, label, sampling_params, max_length, hf_tokenizer, llm_engine):
+        prompt = self._inject_guidance_rule(prompt)
+        return await super().execute(prompt, label, sampling_params, max_length, hf_tokenizer, llm_engine)
+
+    @classmethod
+    def _inject_guidance_rule(cls, prompt: str) -> str:
+        """Insert the guidance rule into the system prompt so the model knows about [GUIDANCE] blocks."""
+        anchor = "- If a tactic errors, try a different approach"
+        idx = prompt.find(anchor)
+        if idx == -1:
+            return prompt
+        line_end = prompt.find("\n", idx)
+        if line_end == -1:
+            line_end = len(prompt)
+        return prompt[:line_end] + "\n" + cls._GUIDANCE_RULE + prompt[line_end:]
 
     async def _post_step(self, trajectory_steps, environment_feedback_text, done, hf_tokenizer):
         if done:
